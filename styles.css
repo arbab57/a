@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+a {
+    text-decoration: none !important;
+}
+body {
+    font-family: Poppins !important;
+    background-color: var(--color-00);
+    
+}
+/* decorative triangles */
+.rect-01 {
+    position: fixed;
+    top: -200px;
+    right: -100px;
+    border: 3px solid #181818;
+    width: 450px;
+    height: 650px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+.rect-02 {
+    position: fixed;
+    bottom: -180px;
+    left: -20px;
+    border: 3px solid #181818;
+    width: 300px;
+    height: 400px;
+    transform: rotate(-70deg);
+    z-index: -1;
+}
+
+:root {
+    --color-00: #121212;
+--color-01: rgba(255, 255, 255, 0.6);
+--color-02: #8c8c8c;
+--color-03: #2f89fc;
+}
+
+/* custom classes to use throughout */
+
+.text-muted-2 {
+    color: var(--color-01);
+}
+.text-muted-3 {
+    color: var(--color-02) !important;
+}
+.text-blue-1 {
+    color: var(--color-03);
+}
+.mb-6 {
+    margin-bottom: 1.7rem;
+}
+.fs-0 {
+    font-size: 13px;
+}
+.project-img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+} 
+.con-project-img {
+    height: 500px;
+}
+.px-10 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.line-he {
+    line-height: 1.8;
+}
+.w-60 {
+    width: 60%;
+}
+.bord {
+    border-bottom: 1px solid rgb(52, 52, 52);
+}
+
+.break {
+    word-break: break-all;
+}
+
+
+
+
+
+/* header */
+.logo-img {
+    border-radius: 80%;
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+.logo {
+    font-size: 2.5rem !important;
+}
+
+/* menu */
+
+.menu {
+position: fixed;
+top: 0;
+background-color: var(--color-00);
+opacity: 0.99;
+width: 100%;
+height: 100vh;
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 6rem 0;
+display: none;
+}
+.menu-icon {
+    width: 65px;
+}
+.menu-icon a {
+    width: 100%;
+}
+.menu button {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav a {
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+    transition: 0.3s;
+    animation-name: anime;
+    animation-timing-function: linear; 
+    animation-fill-mode: forwards;
+    border-bottom: 1px solid rgb(49, 49, 49);
+    width: 50%;
+}
+nav a:hover {
+    color: var(--color-02);
+    font-weight: bolder;
+    scale: 1.2;
+}
+
+nav a:nth-child(1) {
+    animation-duration: 0.2s;
+}
+nav a:nth-child(2) {
+    animation-duration: 0.28s;
+}
+nav a:nth-child(3) {
+    animation-duration: 0.36s;
+}
+nav a:nth-child(4) {
+    animation-duration: 0.44s;
+}
+nav a:nth-child(5) {
+    animation-duration: 0.52s;
+}
+nav a:nth-child(6) {
+    animation-duration: 0.6s;
+}
+
+@keyframes anime {
+ 0%   {transform: translatex(-100%);}
+ 100% {transform: translatex(0%);}
+}
+
+
+
+
+/* main section-01 hello i am arbab section*/
+
+.section-01 {
+    display: flex;
+    align-items: center;
+    height: 50vh;
+}
+
+.sub-heading {
+    letter-spacing: 4px;
+    color: var(--color-01);
+    transition: 0.5s;
+}
+
+.main-heading {
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+
+/* section-02 about section*/
+
+
+.section-02 {
+    height: 140vh;
+}
+.about {
+    opacity: 0.15;
+    font-size: 11rem;
+    font-weight: bold;
+    z-index: -1;
+    top: -9%;
+    left: -12%;
+}
+.about-main {
+    margin-bottom: 3rem !important;
+}
+.about-sub {
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+.social-backg {
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon {
+    transition: 0.3s !important;
+    cursor: pointer;
+}
+.icon:hover span {
+    color: white;
+    
+}
+.trans {
+    transition: 0.2s !important;
+}
+
+
+/* section-03 */
+
+.section-03 {
+    height: 100vh;
+}
+.con-02 {
+    gap: 9rem;
+}
+
+/* section-05 */
+
+.achievement {
+    color: var(--color-02);
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+.achievement-number {
+    font-size: 12rem;
+    color: var(--color-03);
+}
+
+/* footer */
+
+footer {
+    z-index: 2;
+    background-color: #121212;
+}
+
+
+/* 
+==================
+SCRIPT thins that interact with script
+=================== */
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    height: 10px;
+    width: 100%;
+}
+#bar {
+    background-color: #2f89fc;
+    height: 10px;
+    width: 0%;
+    transition: 0.3s;
+}
+
+/* main "i am arbab" container */
+
+#container-change {
+    transition: 0.3s;
+}
+
+/* ==================
+hidden and show classes to make items animate into screen with intersection observer
+================== */
+
+.hidden {
+    opacity: 0;
+    transition: all 0.8s;
+    transform: translateY(40%);
+}
+.show {
+    opacity: 1;
+    transform: translatey(0);
+}
+
+/* transition time for moving sliding images */
+.slide {
+    transition: transform 0.2s, opacity 2s !important;
+
+}
+
+/* counter used to display text and variables to experiment and see values change while writing javascript  */
+#scrolly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 4rem;
+}
+
+/* skills bar that filles up and counts upto 100% on resume page */
+
+/* outer container for bar and percentage number */
+#containerSkillBar1 {
+    height: 5px;
+}
+
+/* one of the two inner containers that contains the bar, the other one contains the percentage number of skill */
+#containerSkillBar2 {
+    height: 100%;
+}
+
+/* the actual bar itself */
+.skillBar {
+    background-color: rgb(46, 84, 234);
+    width: 0%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+/* box that contains the date eg 2019 - preasent on resume page */
+.date {
+    width: 250px;
+}
+
+
+/* form, contact page */
+form {
+    caret-color: white;
+}
+.input {
+    background-color: var(--color-00);
+    border: 1px solid rgb(64, 64, 64);
+}
+form input[type="submit"] {
+    background-color: #262626;
+    color: white;
+    width: 200px;
+    padding: 0.8rem 0;
+}
+
+/* pagination icons at the end of portfolio site < 1 2 3 4 5 > */
+.con-pages a {
+    color: white;
+    font-size: 1.2rem;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con-pages a:nth-child(2) {
+    background-color: #2f89fc;
+}
+
+
+/* used as a java script media query, checks if the font size === "16px" only then slides the iamges,
+ below 768px screen, the font size changes to 8px so the statement is untrue, else statemnt runs, eg
+ if(fontSize === 16px){
+    image = translateY = SomeVariable + %;
+ } else {
+    image = translateY = 0%
+ } */
+ #checker {
+    font-size: 16px !important;
+    position: absolute;
+    opacity: 0;
+}
+@media screen and ( max-width: 768px) {
+    #checker {
+        font-size: 8px !important;
+    }
+}
+
+/* =============================================================================================================
+media queries
+============================================================================================================= */
+
+/* 1250px */
+@media screen and ( max-width: 1250px) {
+
+.w-60 {
+    width: 100%;}
+
+}
+
+/* 920px */
+@media screen and ( max-width: 920px) { 
+
+.achievement-number {
+    font-size: 8rem;}
+
+}
+
+/* 768px */
+@media screen and ( max-width: 768px) {
+
+.section-03 {
+    height: 150vh;}
+
+.w-60 {
+    width: 100%;}
+
+}
+
+@media screen and ( max-width: 700px) {
+
+.achievement-number {
+    font-size: 6rem;}
+
+.achievement {
+    font-size: 1.2rem;}
+
+.section-02 {
+    height: 170vh;}
+
+
+}
+
+/* 550px */
+@media screen and ( max-width: 550px) {
+
+.achievement-number {
+    font-size: 5rem;}
+.achievement {
+    font-size: 1rem;}
+
+}
+
+/* 430px */
+@media screen and ( max-width: 430px) {
+    
+.achievement-number {
+    font-size: 3.5rem;}
+
+}
