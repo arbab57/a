@@ -127,7 +127,7 @@ function getSSS(element, y) {
 }
 
 
-let skillCount = setInterval(skillFunction, 30)
+let skillCount = setInterval(skillFunction, 45)
 
 
 function skillFunction() {
