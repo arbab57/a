@@ -58,7 +58,7 @@ entry.target.classList.add('show');
 });
     
 }, {
-    threshold: 0.5
+    threshold: 0.2
 })
 
 
@@ -184,7 +184,7 @@ return NUM;
 
 
 
-let counts = setInterval(count, 12)
+let counts = setInterval(count, 22)
 
 function count(){
 
