@@ -91,12 +91,12 @@ window.onscroll = function progressFunction() {
 progres = (window.scrollY / totalHeight) * 100;
 progres = Math.round(progres)
 bar.style.width = progres + "%";
-
+ 
 var style = window.getComputedStyle(checker, null).getPropertyValue('font-size');
 
 if (style === "16px") {
     
-imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1600) + "%)"
+imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1100) + "%)"
 imgSlide01.style.transform = "translateY(" + getSSS(imgSlide01, 1600) + "%)"
 imgSlide02.style.transform = "translateY(" + getSSS(imgSlide02, 1600) + "%)"
 imgSlide03.style.transform = "translateY(" + getSSS(imgSlide03, 1600) + "%)"
