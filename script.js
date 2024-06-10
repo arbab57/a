@@ -207,7 +207,7 @@ let counts = setInterval(count, 22)
 
 function count(){
 
-    if (window.scrollY > 5800) {
+    if (window.scrollY > 5500) {
     countUpClient()
     if (count2 > 819) {
         clearInterval(counts)
