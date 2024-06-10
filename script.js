@@ -96,7 +96,7 @@ var style = window.getComputedStyle(checker, null).getPropertyValue('font-size')
 
 if (style === "16px") {
     
-imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1100) + "%)"
+imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1600) + "%)"
 imgSlide01.style.transform = "translateY(" + getSSS(imgSlide01, 1600) + "%)"
 imgSlide02.style.transform = "translateY(" + getSSS(imgSlide02, 1600) + "%)"
 imgSlide03.style.transform = "translateY(" + getSSS(imgSlide03, 1600) + "%)"
