@@ -30,6 +30,7 @@ const skillNum4 = document.querySelector('#skillNum4')
 const skillBar5 = document.querySelector('#skillBar5')
 const skillNum5 = document.querySelector('#skillNum5')
 const menuSticky = document.querySelector('#menuSticky')
+const scrollIcon = document.querySelector('#scrollIcon')
 
 
 let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -74,14 +75,31 @@ const checker = document.querySelector('#checker')
 function menuFU() {
     if (style2 === "16px") {
         menuSticky.classList.remove('sticky')
-}else {
+}else if (style2 === "8px") {
+    if (window.scrollY > 200) {
+        scrollIcon.classList.remove("scrollIcon")
+     }
     if (window.scrollY > menuSticky.offsetTop) {
         menuSticky.classList.add('sticky')
     }else {
         menuSticky.classList.remove('sticky')
+      
     }
 }
 
+}
+
+let timeOur = setTimeout(scrollFun, 2000)
+
+
+let counterScroll = 5;
+
+function scrollFun() {
+    if (style2 === "8px") {
+        if (window.scrollY < 50) {
+   scrollIcon.classList.add("scrollIcon")
+}
+}
 }
 
 
@@ -113,6 +131,12 @@ imgSlide04.style.transform = "translateY(0%)"
 imgSlide05.style.transform = "translateY(0%)"
 imgSlide06.style.transform = "translateY(0%)"
 
+
+if (window.scrollY > 200) {
+   scrollIcon.classList.remove("scrollIcon")
+}
+
+scrolly.textContent = window.scrollY
 }
 
 return progres;
