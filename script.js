@@ -68,6 +68,23 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 const checker = document.querySelector('#checker')
 
+    let style2 = window.getComputedStyle(checker, null).getPropertyValue('font-size');
+    let menU = setInterval(menuFU, 500);
+
+function menuFU() {
+    if (style2 === "16px") {
+        menuSticky.classList.remove('sticky')
+}else {
+    if (window.scrollY > menuSticky.offsetTop) {
+        menuSticky.classList.add('sticky')
+    }else {
+        menuSticky.classList.remove('sticky')
+    }
+}
+
+}
+
+
 window.onscroll = function progressFunction() {
 
 
@@ -95,11 +112,7 @@ imgSlide03.style.transform = "translateY(0%)"
 imgSlide04.style.transform = "translateY(0%)"
 imgSlide05.style.transform = "translateY(0%)"
 imgSlide06.style.transform = "translateY(0%)"
-    if (window.scrollY > menuSticky.offsetTop) {
-    menuSticky.classList.add('sticky')
-}else {
-    menuSticky.classList.remove('sticky')
-}
+
 }
 
 return progres;
