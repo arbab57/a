@@ -31,6 +31,42 @@ body {
     z-index: -1;
 }
 
+.scrollIcon2 {
+    display: none;
+}
+
+.scrollIcon {
+    width: 80px;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    animation-name: scrollAnimation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    rotate: 180deg;
+    animation-fill-mode: forwards;
+    display: block !important;
+}
+
+@keyframes scrollAnimation { 
+    0% {
+    transform: translatey(-120px);
+    }
+    25% {
+        transform: translatey(-105px);
+    }
+    50% {
+        transform: translatey(-120px);
+    }
+    75% {
+        transform: translatey(-105px);
+    }
+    100% {
+        transform: translatey(-120px);
+    }
+}
+
 :root {
     --color-00: #121212;
 --color-01: rgba(255, 255, 255, 0.6);
