@@ -281,12 +281,23 @@ SCRIPT thins that interact with script
     top: 0;
     height: 10px;
     width: 100%;
+     z-index: 1;
 }
 #bar {
     background-color: #2f89fc;
     height: 10px;
     width: 0%;
     transition: 0.3s;
+}
+
+.sticky {
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    width: 90px;
+    padding: 0.7rem;
+    transition: 0.5s;
 }
 
 /* main "i am arbab" container */
