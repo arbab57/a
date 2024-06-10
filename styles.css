@@ -35,16 +35,22 @@ body {
     display: none;
 }
 
+.scrollPosition-main {
+    position: absolute;
+    top: 150%;
+}
+.scrollPosition-resume {
+    position: absolute;
+    top: 100%;
+}
+
 .scrollIcon {
     width: 80px;
-    position: absolute;
-    top: 60%;
     right: 0;
     animation-name: scrollAnimation;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 3;
-    rotate: 180deg;
     animation-fill-mode: forwards;
     display: block !important;
 }
