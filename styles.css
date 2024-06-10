@@ -478,3 +478,9 @@ media queries
     font-size: 3.5rem;}
 
 }
+@media screen and ( max-width: 360px) {
+.padding-0 {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+}
+}
