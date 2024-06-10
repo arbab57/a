@@ -29,6 +29,7 @@ const skillBar4 = document.querySelector('#skillBar4')
 const skillNum4 = document.querySelector('#skillNum4')
 const skillBar5 = document.querySelector('#skillBar5')
 const skillNum5 = document.querySelector('#skillNum5')
+const menuSticky = document.querySelector('#menuSticky')
 
 
 let totalHeight = document.body.scrollHeight - window.innerHeight;
@@ -94,6 +95,11 @@ imgSlide03.style.transform = "translateY(0%)"
 imgSlide04.style.transform = "translateY(0%)"
 imgSlide05.style.transform = "translateY(0%)"
 imgSlide06.style.transform = "translateY(0%)"
+    if (window.scrollY > menuSticky.offsetTop) {
+    menuSticky.classList.add('sticky')
+}else {
+    menuSticky.classList.remove('sticky')
+}
 }
 
 return progres;
