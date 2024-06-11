@@ -82,6 +82,10 @@ body {
 
 /* custom classes to use throughout */
 
+.nowrap {
+    text-wrap: nowrap;
+}
+
 .text-muted-2 {
     color: var(--color-01);
 }
@@ -397,10 +401,6 @@ hidden and show classes to make items animate into screen with intersection obse
     transition: 0.2s;
 }
 
-/* box that contains the date eg 2019 - preasent on resume page */
-.date {
-    width: 250px;
-}
 
 
 /* form, contact page */
@@ -525,4 +525,10 @@ media queries
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
 }
+/* box that contains the date eg 2019 - preasent on resume page */
+.date {
+    display: flex;
+    align-items: center;
+}
+
 }
