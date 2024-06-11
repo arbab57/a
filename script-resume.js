@@ -75,10 +75,21 @@ let skillCount = setInterval(skillFunction, 45)
 
 function skillFunction() {
     let changer;    
-    
-    if (progres > 70) {
+
+    if (style2 === "16px") {
+        if (progres > 62) {
+            countUpSkill() 
+        }
+}
+
+if (style2 === "8px") {
+    if (progres > 68) {
         countUpSkill() 
     }
+}
+
+
+    
     
 }
 
