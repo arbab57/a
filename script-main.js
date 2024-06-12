@@ -101,6 +101,9 @@ window.onscroll = function progressFunction() {
 
 progres = (window.scrollY / totalHeight) * 100;
 progres = Math.round(progres)
+if (progres > 97.5) {
+    progres = 100;
+}
 bar.style.width = progres + "%";
  
 var style = window.getComputedStyle(checker, null).getPropertyValue('font-size');
