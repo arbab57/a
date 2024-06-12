@@ -5,22 +5,6 @@ let uy = 0;
 let progres = 0;
 
 
-const suu =document.querySelector('#suu');
-
-let siu = setTimeout(suuF, 1500);
-
-function suuF() {
-    suu.style.display = "block"
-    setTimeout(suuF2, 500)
-}
-
-function suuF2() {
-    suu.style.display = "none";
-}
-
-
-
-
 // menu
 
 const menuButton = document.querySelector('#dropdownMenu')
