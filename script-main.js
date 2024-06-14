@@ -8,7 +8,7 @@ let progres = 0;
 // annoucement
 const conNews = document.querySelector('#con-news')
 
-let anounce = setTimeout(banner, 1500)
+let anounce = setTimeout(banner, 1100)
 
 function banner() {
 conNews.classList.add("show-news")

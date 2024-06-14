@@ -152,8 +152,10 @@ body {
     background-color: #2e86f9;
     font-size: 1.1rem;
     padding: 0.1rem 3rem;
-    transition: 0;
+    transition: 0 !important;
 }
+
+
 
 /* header */
 .logo-img {
@@ -219,7 +221,6 @@ nav a {
     position: relative;
 }
 nav a:hover {
-    color: var(--color-02);
     font-weight: bolder;
     scale: 1.2;
 }
@@ -490,9 +491,23 @@ form input[type="submit"] {
     justify-content: center;
     align-items: center;
 }
-.con-pages a:nth-child(2) {
-    background-color: #2f89fc;
+
+.btn-page {
+    color: white;
+    font-size: 1.2rem;
+    background-color: #1e1e1e;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
 }
+
+
 
 
 /* used as a java script media query, checks if the font size === "16px" only then slides the iamges,
@@ -523,6 +538,13 @@ media queries
 .w-60 {
     width: 100%;}
 
+nav a {
+width: 80%;
+    }
+.new {
+    font-size: 1.1rem;
+    padding: 0.1rem 2rem;
+}
 }
 
 /* 920px */
@@ -568,7 +590,13 @@ media queries
     .show-news {
         height: 55px;
     }
-
+nav a {
+     width: 90%;
+         }
+    .new {
+         font-size: 1rem;
+         padding: 0.1rem 1rem;
+    }
 }
 
 /* 550px */
@@ -577,9 +605,16 @@ media queries
 .achievement-number {
     font-size: 5rem;}
 .achievement {
-    font-size: 1rem;}
+font-size: 1rem;}
 
+nav a:nth-child(3) {
+display: flex;
+flex-direction: column;
+}
 
+.new {
+    position: relative;
+}
 
 }
 
@@ -589,6 +624,7 @@ media queries
 .achievement-number {
     font-size: 3.5rem;}
 
+  
 }
 @media screen and ( max-width: 360px) {
 .padding-0 {
