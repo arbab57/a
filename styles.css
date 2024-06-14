@@ -9,6 +9,9 @@ body {
     
 }
 
+
+
+
 #suu {
     width: 100%;
     height: 100vh;
@@ -137,8 +140,26 @@ body {
 }
 
 
+/* annoucement  */
 
+.con-news {
+    background-color: #2e86f9;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.8s;
+}
 
+.new {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #2e86f9;
+    font-size: 1.1rem;
+    padding: 0.1rem 3rem;
+    transition: 0;
+}
 
 /* header */
 .logo-img {
@@ -201,6 +222,7 @@ nav a {
     animation-fill-mode: forwards;
     border-bottom: 1px solid rgb(49, 49, 49);
     width: 50%;
+    position: relative;
 }
 nav a:hover {
     color: var(--color-02);
@@ -319,6 +341,40 @@ nav a:nth-child(6) {
     color: var(--color-03);
 }
 
+/* up arrow */
+
+.up-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(63, 113, 170);
+    border-radius: 50%;
+    padding: 1rem;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    margin: 0 auto;
+    animation-name: bobbleup;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bobbleup {
+0% {
+    transform: translateY(0);
+}
+50% {
+    transform: translateY(10px);
+}  
+100% {
+    transform: translateY(0);
+} 
+}
+
 /* footer */
 
 footer {
@@ -329,7 +385,7 @@ footer {
 
 /* 
 ==================
-SCRIPT thins that interact with script
+SCRIPT things that interact with script
 =================== */
 .progress-bar-container {
     position: fixed;

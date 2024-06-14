@@ -5,6 +5,21 @@ let uy = 0;
 let progres = 0;
 
 
+// annoucement
+const conNews = document.querySelector('#con-news')
+
+let anounce = setTimeout(banner, 1500)
+
+function banner() {
+conNews.style.height = "35px"
+setTimeout(clearNews, 7500)
+}
+
+function clearNews() {
+    conNews.style.height = "0px"
+}
+
+
 // menu
 
 const menuButton = document.querySelector('#dropdownMenu')
@@ -38,10 +53,6 @@ entry.target.classList.add('show');
     threshold: 0
 })
 hiddenElements.forEach((el) => observer.observe(el));
-
-
-
-
 
 
 // menusticky on mobil devices
@@ -175,7 +186,7 @@ let count1 = 0;
 let count2 = 0;
 let count3 = 0;
 
-let counts = setInterval(count, 22)
+let counts = setInterval(count, 14)
 
 function count(){
 
