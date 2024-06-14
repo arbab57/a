@@ -11,12 +11,12 @@ const conNews = document.querySelector('#con-news')
 let anounce = setTimeout(banner, 1500)
 
 function banner() {
-conNews.style.height = "35px"
+conNews.classList.add("show-news")
 setTimeout(clearNews, 7500)
 }
 
 function clearNews() {
-    conNews.style.height = "0px"
+    conNews.classList.remove("show-news")
 }
 
 
