@@ -40,10 +40,6 @@ entry.target.classList.add('show');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
-
-
-
-
 // menusticky on mobil devices
 
 const menuSticky = document.querySelector('#menuSticky')
