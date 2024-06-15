@@ -12,11 +12,13 @@ let anounce = setTimeout(banner, 1100)
 
 function banner() {
 conNews.classList.add("show-news")
+scrollIcon.style.top = "130%"
 setTimeout(clearNews, 7500)
 }
 
 function clearNews() {
     conNews.classList.remove("show-news")
+    scrollIcon.style.top = "150%"
 }
 
 
