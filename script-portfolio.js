@@ -64,6 +64,14 @@ let projects = [
     desc: "Experience a user-friendly calculator design project aimed at providing a seamless and intuitive calculation experience, with easy-to-use buttons, clear display, and customizable settings.",
     view: "view Project"
 },
+{
+    href: "https://arbab57.github.io/stopwatch/",
+    src:  "assets/projects/stopwatch.png",
+    sub:  "JavaScript (ES6+)",
+    main: "ClockIt: A Simple and Intuitive Stopwatch",
+    desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
+    view: "view Project"
+}
 
 
 ]
@@ -216,7 +224,8 @@ if (input === 1) {
    
 }
 if (input === 2) {
-    p0 = 6
+    p0 += 6;
+    p1 += 6;
    pageNum = input; 
 }
 
@@ -270,7 +279,7 @@ console.log(pageNum)
     pageIndicator()
 
     if (pageNum === 2) {
-        conP2.classList.add("d-none")
+        
         conP3.classList.add("d-none")
         conP4.classList.add("d-none")
         conP5.classList.add("d-none")
