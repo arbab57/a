@@ -208,18 +208,20 @@ function pageFunction(input) {
     
 if (input === "next") {
     p0 = p0 + 6;
+    p1 += 6;
     pageNum++;
     pageNum = pageNum == totalPages ? totalPages : pageNum;
 }
         
 if (input === "prev") {
     p0 = p0 - 6;
+    p1 -= 6;
     pageNum--;
     pageNum = pageNum == 0 ? 1 : pageNum;  
 }
 if (input === 1) {
     p0 = 0;
-    
+    p1 = 1;
     pageNum = input
    
 }
