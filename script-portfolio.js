@@ -71,6 +71,14 @@ let projects = [
     main: "ClockIt: A Simple and Intuitive Stopwatch",
     desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
     view: "view Project"
+},
+{
+    href: "https://arbab57.github.io/flexStart/",
+    src:  "assets/projects/flexstart.png",
+    sub:  "Bootstrap 5",
+    main: "Digital Doorway: Animated Bootstrap Landing Page",
+    desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
+    view: "view Project"
 }
 
 
@@ -209,6 +217,7 @@ function pageFunction(input) {
 if (input === "next") {
     p0 = p0 + 6;
     p1 += 6;
+    p2 += 6;
     pageNum++;
     pageNum = pageNum == totalPages ? totalPages : pageNum;
 }
@@ -216,18 +225,21 @@ if (input === "next") {
 if (input === "prev") {
     p0 = p0 - 6;
     p1 -= 6;
+    p2 -= 6;
     pageNum--;
     pageNum = pageNum == 0 ? 1 : pageNum;  
 }
 if (input === 1) {
     p0 = 0;
     p1 = 1;
+    p2 = 2;
     pageNum = input
    
 }
 if (input === 2) {
     p0 += 6;
     p1 += 6;
+    p2 += 6;
    pageNum = input; 
 }
 
@@ -282,14 +294,14 @@ console.log(pageNum)
 
     if (pageNum === 2) {
         
-        conP3.classList.add("d-none")
+       
         conP4.classList.add("d-none")
         conP5.classList.add("d-none")
         conP6.classList.add("d-none")
 
     } else {
-        conP2.classList.remove("d-none")
-        conP3.classList.remove("d-none")
+        
+        
         conP4.classList.remove("d-none")
         conP5.classList.remove("d-none")
         conP6.classList.remove("d-none")
