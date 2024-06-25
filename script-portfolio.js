@@ -79,6 +79,22 @@ let projects = [
     main: "Digital Doorway: Animated Bootstrap Landing Page",
     desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
     view: "view Project"
+},
+{
+    href: "https://arbab57.github.io/portfolioreact/",
+    src:  "assets/projects/portfolioReact.png",
+    sub:  "React.JS",
+    main: "ComponentCraft: A React.js Portfolio",
+    desc: "Built using React.js, this portfolio demonstrates my proficiency in developing scalable, efficient, and interactive applications. The project features a curated selection of components and applications.",
+    view: "view Project"
+},
+{
+    href: "https://arbab57.github.io/todolist/",
+    src:  "assets/projects/todolist.png",
+    sub:  "React.JS & JavaScript (ES6+)",
+    main: "TaskTracker: A Responsive Todo List Application",
+    desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
+    view: "view Project"
 }
 
 
@@ -215,17 +231,21 @@ pageFunction(2);
 function pageFunction(input) {
     
 if (input === "next") {
-    p0 = p0 + 6;
+    p0 += 6;
     p1 += 6;
     p2 += 6;
+    p3 += 6;
+    p4 += 6;
     pageNum++;
     pageNum = pageNum == totalPages ? totalPages : pageNum;
 }
         
 if (input === "prev") {
-    p0 = p0 - 6;
+    p0 -= 6;
     p1 -= 6;
     p2 -= 6;
+    p3 -= 6;
+    p4 -= 6;
     pageNum--;
     pageNum = pageNum == 0 ? 1 : pageNum;  
 }
@@ -233,6 +253,8 @@ if (input === 1) {
     p0 = 0;
     p1 = 1;
     p2 = 2;
+    p3 = 3;
+    p4 = 4;
     pageNum = input
    
 }
@@ -240,6 +262,8 @@ if (input === 2) {
     p0 += 6;
     p1 += 6;
     p2 += 6;
+    p3 += 6;
+    p4 += 6;
    pageNum = input; 
 }
 
@@ -295,15 +319,15 @@ console.log(pageNum)
     if (pageNum === 2) {
         
        
-        conP4.classList.add("d-none")
-        conP5.classList.add("d-none")
+        
+        
         conP6.classList.add("d-none")
 
     } else {
         
         
-        conP4.classList.remove("d-none")
-        conP5.classList.remove("d-none")
+        
+        
         conP6.classList.remove("d-none")
     }
     
