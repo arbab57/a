@@ -184,46 +184,85 @@ const countClient = document.querySelector('#client-num')
 const countProject = document.querySelector('#project-num')
 const countReturn = document.querySelector('#return-num')
 
-let count1 = 0;
-let count2 = 0;
-let count3 = 0;
+// let count1 = 0;
+// let count2 = 0;
+// let count3 = 0;
 
-let counts = setInterval(count, 14)
+// let counts = setInterval(count, 10)
 
-function count(){
+// function count(){
 
-    if (window.scrollY > 5500) {
-    countUpClient()
-    if (count2 > 819) {
-        clearInterval(counts)
-    }
-}
-}
-
-
-function countUpClient(){
-    count1++;
-    countClient.textContent = count1;
-if (count1 > 420) {
-    count1 = 420;
-}
+//     if (window.scrollY > 5500) {
+//     countUpClient()
+//     if (count2 > 819) {
+//         clearInterval(counts)
+//     }
+// }
+// }
 
 
-count2++;
-countProject.textContent = count2;
-if (count2 > 819){
-    count2 = 819;
+// function countUpClient(){
+//     count1++;
+//     countClient.textContent = count1;
+// if (count1 > 420) {
+//     count1 = 420;
+// }
+
+
+// count2++;
+// countProject.textContent = count2;
+// if (count2 > 819){
+//     count2 = 819;
     
+// }
+
+// count3++;
+// countReturn.textContent = count3;
+// if (count3 > 379){
+//     count3 = 379;
+// }
+
+// return count2;
+
+// }
+
+// intersection oberserver
+
+const countElement = document.querySelectorAll('#client-num')
+
+const observer3 = new IntersectionObserver((entries) => {
+let called = false;
+entries.forEach((entry) => {
+if (entry.isIntersecting) {
+  if (called !== true) {
+    counterUp(countClient, 420)
+    counterUp(countProject, 876)
+    counterUp(countReturn, 389)
+    called = true
+  }else {
+        null
+  }
+
 }
+});
+    
+}, {
+    threshold: 0.5
+})
+countElement.forEach((el) => observer3.observe(el));
 
-count3++;
-countReturn.textContent = count3;
-if (count3 > 379){
-    count3 = 379;
-}
-
-return count2;
-
+function counterUp(item, num) {
+    let startingNum = 0;
+    let animationSpeed = 30;
+    let animationGrowNumber = num / 100;
+    let interval = setInterval(() => {
+        if (startingNum >= num) {
+            clearInterval(interval)
+        }else {
+            startingNum += animationGrowNumber
+            item.innerText = Math.round(startingNum);
+        }
+    }, 50)
 }
 
 
