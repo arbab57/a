@@ -82,7 +82,7 @@ let projects = [
 },
 {
     href: "https://arbab57.github.io/portfolioreact/",
-    src:  "assets/projects/portfolioReact.png",
+    src:  "assets/projects/portfolioreact.png",
     sub:  "React.JS",
     main: "ComponentCraft: A React.js Portfolio",
     desc: "Built using React.js, this portfolio demonstrates my proficiency in developing scalable, efficient, and interactive applications. The project features a curated selection of components and applications.",
