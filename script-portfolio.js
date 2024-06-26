@@ -95,6 +95,14 @@ let projects = [
     main: "TaskTracker: A Responsive Todo List Application",
     desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
     view: "view Project"
+},
+{
+    href: "https://arbab57.github.io/imagesearch/",
+    src:  "assets/projects/imagesearch.png",
+    sub:  "JavaScript (ES6+) & API",
+    main: "SnapSearch: A Powerful Image Search App",
+    desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing teh Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
+    view: "view Project"
 }
 
 
@@ -236,6 +244,7 @@ if (input === "next") {
     p2 += 6;
     p3 += 6;
     p4 += 6;
+    p5 += 6;
     pageNum++;
     pageNum = pageNum == totalPages ? totalPages : pageNum;
 }
@@ -246,6 +255,7 @@ if (input === "prev") {
     p2 -= 6;
     p3 -= 6;
     p4 -= 6;
+    p5 -= 6;
     pageNum--;
     pageNum = pageNum == 0 ? 1 : pageNum;  
 }
@@ -255,6 +265,7 @@ if (input === 1) {
     p2 = 2;
     p3 = 3;
     p4 = 4;
+    p5 = 5;
     pageNum = input
    
 }
@@ -264,6 +275,7 @@ if (input === 2) {
     p2 += 6;
     p3 += 6;
     p4 += 6;
+    p5 += 6
    pageNum = input; 
 }
 
@@ -315,22 +327,7 @@ console.log(pageNum)
     linkP6[i].href = projects[p5].href
     }
     pageIndicator()
-
-    if (pageNum === 2) {
-        
-       
-        
-        
-        conP6.classList.add("d-none")
-
-    } else {
-        
-        
-        
-        
-        conP6.classList.remove("d-none")
-    }
-    
+   
         window.scrollTo(0 , 10);
     
 
