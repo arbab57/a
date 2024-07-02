@@ -104,11 +104,19 @@ let projects = [
     view: "view Project",
   },
   {
-    href: "https://arbab57.github.io/portfolio/",
-    src: "assets/projects/project-portfolio-1.png",
-    sub: "CSS3 & HTML",
-    main: "Design Portfolio: WhereArt Meets Code",
-    desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
+    href: "https://arbab57.github.io/ecommerce/",
+    src: "assets/projects/ecommerce.png",
+    sub: "React.js & APIS",
+    main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
+    desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/avon-login-form/",
+    src: "assets/projects/avon.png",
+    sub: "JavaScript (ES6+)",
+    main: "AvonAuth: Secure Login and Signup Form with Validation",
+    desc: "AvonAuth is a robust form with built in validation system designed to provide a user-friendly login and signup experience. Built with a focus on security and ease of use, AvonAuth ensures that user data is protected while offering a seamless Validation experience.",
     view: "View Project",
   },
 ];
@@ -273,7 +281,7 @@ function pageFunction(input) {
   }
   if (input === 3) {
     p0 = 12;
-    p1 = 7;
+    p1 = 13;
     p2 = 8;
     p3 = 9;
     p4 = 10;
@@ -282,13 +290,11 @@ function pageFunction(input) {
   }
 
   if (pageNum === 3) {
-    conP2.classList.add("d-none");
     conP3.classList.add("d-none");
     conP4.classList.add("d-none");
     conP5.classList.add("d-none");
     conP6.classList.add("d-none");
   } else {
-    conP2.classList.remove("d-none");
     conP3.classList.remove("d-none");
     conP4.classList.remove("d-none");
     conP5.classList.remove("d-none");
