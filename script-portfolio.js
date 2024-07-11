@@ -120,135 +120,121 @@ let projects = [
     view: "View Project",
   },
 ];
-const conP1 = document.querySelector("#con-p1");
-const linkP1 = document.querySelectorAll(".link-p1");
-const imgP1 = document.querySelector("#img-p1");
-const subP1 = document.querySelector("#sub-p1");
-const mainP1 = document.querySelector("#main-p1");
-const descP1 = document.querySelector("#desc-p1");
-const viewP1 = document.querySelector("#view-p1");
 
-const conP2 = document.querySelector("#con-p2");
-const linkP2 = document.querySelectorAll(".link-p2");
-const imgP2 = document.querySelector("#img-p2");
-const subP2 = document.querySelector("#sub-p2");
-const mainP2 = document.querySelector("#main-p2");
-const descP2 = document.querySelector("#desc-p2");
-const viewP2 = document.querySelector("#view-p2");
-
-const conP3 = document.querySelector("#con-p3");
-const linkP3 = document.querySelectorAll(".link-p3");
-const imgP3 = document.querySelector("#img-p3");
-const subP3 = document.querySelector("#sub-p3");
-const mainP3 = document.querySelector("#main-p3");
-const descP3 = document.querySelector("#desc-p3");
-const viewP3 = document.querySelector("#view-p3");
-
-const conP4 = document.querySelector("#con-p4");
-const linkP4 = document.querySelectorAll(".link-p4");
-const imgP4 = document.querySelector("#img-p4");
-const subP4 = document.querySelector("#sub-p4");
-const mainP4 = document.querySelector("#main-p4");
-const descP4 = document.querySelector("#desc-p4");
-const viewP4 = document.querySelector("#view-p4");
-
-const conP5 = document.querySelector("#con-p5");
-const linkP5 = document.querySelectorAll(".link-p5");
-const imgP5 = document.querySelector("#img-p5");
-const subP5 = document.querySelector("#sub-p5");
-const mainP5 = document.querySelector("#main-p5");
-const descP5 = document.querySelector("#desc-p5");
-const viewP5 = document.querySelector("#view-p5");
-
-const conP6 = document.querySelector("#con-p6");
-const linkP6 = document.querySelectorAll(".link-p6");
-const imgP6 = document.querySelector("#img-p6");
-const subP6 = document.querySelector("#sub-p6");
-const mainP6 = document.querySelector("#main-p6");
-const descP6 = document.querySelector("#desc-p6");
-const viewP6 = document.querySelector("#view-p6");
-
+const projectContainer = document.querySelector("#project-container");
 const prevBtn = document.querySelector("#prev-btn");
 const btn1 = document.querySelector("#one-btn");
 const btn2 = document.querySelector("#two-btn");
 const btn3 = document.querySelector("#three-btn");
 const nextBtn = document.querySelector("#next-btn");
 
-let p0 = 0;
-let p1 = 1;
-let p2 = 2;
-let p3 = 3;
-let p4 = 4;
-let p5 = 5;
 let pageNum = 1;
-totalPages = 3;
+totalPages = Math.ceil(projects.length / 6);
+let startingProject = 0;
+let endingProject = 6;
+let newArary;
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  imgP1.src = projects[p0].src;
-  subP1.innerText = projects[p0].sub;
-  mainP1.innerText = projects[p0].main;
-  descP1.innerText = projects[p0].desc;
-  viewP1.innerText = projects[p0].view;
-
-  imgP2.src = projects[p1].src;
-  subP2.innerText = projects[p1].sub;
-  mainP2.innerText = projects[p1].main;
-  descP2.innerText = projects[p1].desc;
-  viewP2.innerText = projects[p1].view;
-
-  imgP3.src = projects[p2].src;
-  subP3.innerText = projects[p2].sub;
-  mainP3.innerText = projects[p2].main;
-  descP3.innerText = projects[p2].desc;
-  viewP3.innerText = projects[p2].view;
-
-  imgP4.src = projects[p3].src;
-  subP4.innerText = projects[p3].sub;
-  mainP4.innerText = projects[p3].main;
-  descP4.innerText = projects[p3].desc;
-  viewP4.innerText = projects[p3].view;
-
-  imgP5.src = projects[p4].src;
-  subP5.innerText = projects[p4].sub;
-  mainP5.innerText = projects[p4].main;
-  descP5.innerText = projects[p4].desc;
-  viewP5.innerText = projects[p4].view;
-
-  imgP6.src = projects[p5].src;
-  subP6.innerText = projects[p5].sub;
-  mainP6.innerText = projects[p5].main;
-  descP6.innerText = projects[p5].desc;
-  viewP6.innerText = projects[p5].view;
-
-  for (let i = 0; i < linkP1.length; i++) {
-    linkP1[i].href = projects[p0].href;
-    linkP2[i].href = projects[p1].href;
-    linkP3[i].href = projects[p2].href;
-    linkP4[i].href = projects[p3].href;
-    linkP5[i].href = projects[p4].href;
-    linkP6[i].href = projects[p5].href;
-
-    pageIndicator();
-  }
+  newArary = projects.slice(startingProject, endingProject);
+  pageIndicator();
+  renderProjects(newArary);
 });
+
+const renderProjects = (array) => {
+  projectContainer.innerHTML = array
+    .map((project, index) => {
+      if (index % 2 === 0) {
+        return `
+        <div class="row justify-content-center gap-lg-5  p-lg-4  text-sm-start">\
+                  <div id="imgSlide0${
+                    index + 1
+                  }" class="col-xxl-4 col-lg-5 col-md-5 con-project-img slide imgSlide03"><a
+                            class="link-p1" href="${
+                              project.href
+                            }" target="_blank"><img
+                                loading="lazy" id="img-p1" class="project-img"
+                                src="${project.src}" alt=""></a>
+                  </div>
+                  <div
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        <h3 id="sub-p1" class="fs-6 text-muted-3 mb-3">${
+                          project.sub
+                        }</h3>
+                        <h3 class="fs-2 mb-4 fw-normal"><a id="main-p1" class="text-white link-p1"
+                                href="${project.href}" target="_blank">${
+          project.main
+        }</a></h3>
+                        <p id="desc-p1" class="fs-5 text-muted-3 mb-4">${
+                          project.desc
+                        }</p>
+                        <a id="view-p1" class="text-blue-1 fs-5 link-p1" href="${
+                          project.href
+                        }"
+                            target="_blank">View
+                            Project</a>
+                  </div>
+        </div>
+        `;
+      } else if (index % 2 !== 0 || index === 0) {
+        return `
+      <div class="row justify-content-center flex-row-reverse gap-lg-4 p-lg-5 text-sm-start">
+                    <div  id="imgSlide0${
+                      index + 1
+                    }" class="col-xxl-4 col-lg-5 col-md-5 con-project-img slide "><a
+                            class="link-p2" href="${
+                              project.href
+                            }" target="_blank"><img
+                                loading="lazy" id="img-p2" class="project-img"
+                                src="${project.src}" alt=""></a>
+                    </div>
+                    <div
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        <h3 id="sub-p2" class="fs-6 text-muted-3 mb-3">${
+                          project.sub
+                        }</h3>
+                        <h3 class="fs-2 mb-4 fw-normal"><a id="main-p2" class="text-white link-p2"
+                                href="${project.href}" target="_blank">${
+          project.main
+        }</a></h3>
+                        <p id="desc-p2" class="fs-5 text-muted-3 mb-4">${
+                          project.desc
+                        }</p>
+                        <a id="view-p2" class="text-blue-1 fs-5 link-p2" href="${
+                          project.href
+                        }"
+                            target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+      `;
+      }
+    })
+    .join("");
+};
 
 nextBtn.addEventListener("click", () => {
-  if (pageNum === 1) {
-    pageFunction(2);
-  } else if (pageNum === 2) {
-    pageFunction(3);
-  } else if (pageNum === 3) {
-    pageFunction(1);
-  }
+  pageNum++;
+  pageNum = pageNum > totalPages ? totalPages : pageNum;
+
+  startingProject = pageNum * 6 - 6;
+  endingProject = pageNum * 6;
+  endingProject =
+    endingProject > projects.length ? projects.length : endingProject;
+
+  pageIndicator();
+  newArary = projects.slice(startingProject, endingProject);
+  renderProjects(newArary);
 });
 prevBtn.addEventListener("click", function () {
-  if (pageNum === 1) {
-    pageFunction(3);
-  } else if (pageNum === 2) {
-    pageFunction(1);
-  } else if (pageNum === 3) {
-    pageFunction(2);
-  }
+  pageNum--;
+  pageNum = pageNum === 0 ? 1 : pageNum;
+
+  startingProject = pageNum * 6 - 6;
+  endingProject = pageNum * 6;
+
+  pageIndicator();
+  newArary = projects.slice(startingProject, endingProject);
+  renderProjects(newArary);
 });
 btn1.addEventListener("click", function () {
   pageFunction(1);
@@ -261,93 +247,18 @@ btn3.addEventListener("click", function () {
 });
 
 function pageFunction(input) {
-  if (input === 1) {
-    p0 = 0;
-    p1 = 1;
-    p2 = 2;
-    p3 = 3;
-    p4 = 4;
-    p5 = 5;
-    pageNum = 1;
-  }
-  if (input === 2) {
-    p0 = 6;
-    p1 = 7;
-    p2 = 8;
-    p3 = 9;
-    p4 = 10;
-    p5 = 11;
-    pageNum = 2;
-  }
-  if (input === 3) {
-    p0 = 12;
-    p1 = 13;
-    p2 = 8;
-    p3 = 9;
-    p4 = 10;
-    p5 = 11;
-    pageNum = 3;
-  }
+  pageNum = input;
+  startingProject = (input - 1) * 6;
+  endingProject = input * 6;
 
-  if (pageNum === 3) {
-    conP3.classList.add("d-none");
-    conP4.classList.add("d-none");
-    conP5.classList.add("d-none");
-    conP6.classList.add("d-none");
-  } else {
-    conP3.classList.remove("d-none");
-    conP4.classList.remove("d-none");
-    conP5.classList.remove("d-none");
-    conP6.classList.remove("d-none");
-  }
+  endingProject =
+    endingProject > projects.length + 1 ? projects.length : endingProject;
+
+  newArary = projects.slice(startingProject, endingProject);
+  renderProjects(newArary);
   pageIndicator();
 
   window.scrollTo(0, 10);
-
-  imgP1.src = projects[p0].src;
-  subP1.innerText = projects[p0].sub;
-  mainP1.innerText = projects[p0].main;
-  descP1.innerText = projects[p0].desc;
-  viewP1.innerText = projects[p0].view;
-
-  imgP2.src = projects[p1].src;
-  subP2.innerText = projects[p1].sub;
-  mainP2.innerText = projects[p1].main;
-  descP2.innerText = projects[p1].desc;
-  viewP2.innerText = projects[p1].view;
-
-  imgP3.src = projects[p2].src;
-  subP3.innerText = projects[p2].sub;
-  mainP3.innerText = projects[p2].main;
-  descP3.innerText = projects[p2].desc;
-  viewP3.innerText = projects[p2].view;
-
-  imgP4.src = projects[p3].src;
-  subP4.innerText = projects[p3].sub;
-  mainP4.innerText = projects[p3].main;
-  descP4.innerText = projects[p3].desc;
-  viewP4.innerText = projects[p3].view;
-
-  imgP5.src = projects[p4].src;
-  subP5.innerText = projects[p4].sub;
-  mainP5.innerText = projects[p4].main;
-  descP5.innerText = projects[p4].desc;
-  viewP5.innerText = projects[p4].view;
-
-  imgP6.src = projects[p5].src;
-  subP6.innerText = projects[p5].sub;
-  mainP6.innerText = projects[p5].main;
-  descP6.innerText = projects[p5].desc;
-  viewP6.innerText = projects[p5].view;
-
-  for (let i = 0; i < linkP1.length; i++) {
-    linkP1[i].href = projects[p0].href;
-    linkP2[i].href = projects[p1].href;
-    linkP3[i].href = projects[p2].href;
-    linkP4[i].href = projects[p3].href;
-    linkP5[i].href = projects[p4].href;
-    linkP6[i].href = projects[p5].href;
-  }
 }
 
 function pageIndicator() {
@@ -429,17 +340,17 @@ function menuFU() {
 }
 
 // images sliding up and down and progress bar
+
 const bar = document.querySelector("#bar");
 
-const imgSlide = document.querySelector("#img-slide");
-const imgSlide01 = document.querySelector("#imgSlide01");
-const imgSlide02 = document.querySelector("#imgSlide02");
-const imgSlide03 = document.querySelector("#imgSlide03");
-const imgSlide04 = document.querySelector("#imgSlide04");
-const imgSlide05 = document.querySelector("#imgSlide05");
-const imgSlide06 = document.querySelector("#imgSlide06");
-
 window.onscroll = function progressFunction() {
+  const imgSlide01 = document.querySelector("#imgSlide01");
+  const imgSlide02 = document.querySelector("#imgSlide02");
+  const imgSlide03 = document.querySelector("#imgSlide03");
+  const imgSlide04 = document.querySelector("#imgSlide04");
+  const imgSlide05 = document.querySelector("#imgSlide05");
+  const imgSlide06 = document.querySelector("#imgSlide06");
+
   let totalHeight = document.body.scrollHeight - window.innerHeight;
   progres = (window.scrollY / totalHeight) * 100;
   progres = Math.round(progres);
@@ -454,25 +365,17 @@ window.onscroll = function progressFunction() {
     .getPropertyValue("font-size");
 
   if (style === "16px") {
-    imgSlide01.style.transform =
-      "translateY(" + getSSS(imgSlide01, 1600) + "%)";
-    imgSlide02.style.transform =
-      "translateY(" + getSSS(imgSlide02, 1600) + "%)";
-    imgSlide03.style.transform =
-      "translateY(" + getSSS(imgSlide03, 1600) + "%)";
-    imgSlide04.style.transform =
-      "translateY(" + getSSS(imgSlide04, 1600) + "%)";
-    imgSlide05.style.transform =
-      "translateY(" + getSSS(imgSlide05, 1600) + "%)";
-    imgSlide06.style.transform =
-      "translateY(" + getSSS(imgSlide06, 1600) + "%)";
+    newArary.forEach((item, index) => {
+      document.querySelector(`#imgSlide0${index + 1}`).style.transform =
+        "translateY(" +
+        getSSS(document.querySelector(`#imgSlide0${index + 1}`), 1600) +
+        "%)";
+    });
   } else {
-    imgSlide01.style.transform = "translateY(0%)";
-    imgSlide02.style.transform = "translateY(0%)";
-    imgSlide03.style.transform = "translateY(0%)";
-    imgSlide04.style.transform = "translateY(0%)";
-    imgSlide05.style.transform = "translateY(0%)";
-    imgSlide06.style.transform = "translateY(0%)";
+    newArary.forEach((item, index) => {
+      document.querySelector(`#imgSlide0${index + 1}`).style.transform =
+        "translateY(0%)";
+    });
   }
 
   return progres;
