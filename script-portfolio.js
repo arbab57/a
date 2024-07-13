@@ -4,16 +4,32 @@ let projects = [
   {
     href: "https://arbab57.github.io/portfolio/",
     src: "assets/projects/project-portfolio-1.png",
-    sub: "CSS3 & HTML",
+    sub: "CSS3 & Frameworks",
     main: "Design Portfolio: WhereArt Meets Code",
     desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
     view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/portfolio2/",
+    src: "assets/projects/portfolio-practice.png",
+    sub: "CSS3 & Frameworks",
+    main: "Empowering Innovaters: Portfolio",
+    desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/stopwatch/",
+    src: "assets/projects/stopwatch.png",
+    sub: "JavaScript (ES6+)",
+    main: "ClockIt: A Simple and Intuitive Stopwatch",
+    desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
+    view: "view Project",
   },
 
   {
     href: "https://arbab57.github.io/onlineCourses/",
     src: "assets/projects/project- courses.png",
-    sub: "JavaScript (ES6+)",
+    sub: "CSS3 & Frameworks",
     main: "MindMax: Maximizing Potential through Online Learning",
     desc: "I'm thrilled to have created an impactful learning experience that has already seen significant student engagement and success. It was a pleasure collaborating with the team to bring their vision to life!",
     view: "View Project",
@@ -22,7 +38,7 @@ let projects = [
   {
     href: "https://arbab57.github.io/architecturesite/index.html",
     src: "assets/projects/project-architecture.png",
-    sub: "BOOTSTRAP 5",
+    sub: "CSS3 & Frameworks",
     main: "Constructing Excellence: Architecture Firm",
     desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
     view: "View Project",
@@ -31,27 +47,9 @@ let projects = [
   {
     href: "https://arbab57.github.io/bookstore/",
     src: "assets/projects/project-ourtracks.png",
-    sub: "E-commerce",
+    sub: "CSS3 & Frameworks",
     main: "The Book Haven: E-commerce Solution",
     desc: "Integrating the payment gateway and book catalog APIs. Optimizing the site for performance and scalability. Ensuring security and data privacy.",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/travel/",
-    src: "assets/projects/697-890.png",
-    sub: "FrameWroks",
-    main: "TravelTech: AI-Powered Travel",
-    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/portfolio2/",
-    src: "assets/projects/portfolio-practice.png",
-    sub: "Portfolios",
-    main: "Empowering Innovaters: Portfolio",
-    desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
     view: "View Project",
   },
 
@@ -63,22 +61,16 @@ let projects = [
     desc: "Experience a user-friendly calculator design project aimed at providing a seamless and intuitive calculation experience, with easy-to-use buttons, clear display, and customizable settings.",
     view: "view Project",
   },
+
   {
-    href: "https://arbab57.github.io/stopwatch/",
-    src: "assets/projects/stopwatch.png",
-    sub: "JavaScript (ES6+)",
-    main: "ClockIt: A Simple and Intuitive Stopwatch",
-    desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
-    view: "view Project",
+    href: "https://arbab57.github.io/travel/",
+    src: "assets/projects/697-890.png",
+    sub: "CSS3 & Frameworks",
+    main: "TravelTech: AI-Powered Travel",
+    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
+    view: "View Project",
   },
-  {
-    href: "https://arbab57.github.io/flexStart/",
-    src: "assets/projects/flexstart.png",
-    sub: "Bootstrap 5",
-    main: "Digital Doorway: Animated Bootstrap Landing Page",
-    desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
-    view: "view Project",
-  },
+
   {
     href: "https://arbab57.github.io/portfolioreact/",
     src: "assets/projects/portfolioreact.png",
@@ -90,7 +82,7 @@ let projects = [
   {
     href: "https://arbab57.github.io/todolist/",
     src: "assets/projects/todolist.png",
-    sub: "React.JS & JavaScript (ES6+)",
+    sub: "React.JS",
     main: "TaskTracker: A Responsive Todo List Application",
     desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
     view: "view Project",
@@ -98,19 +90,12 @@ let projects = [
   {
     href: "https://arbab57.github.io/imagesearch/",
     src: "assets/projects/imagesearch.png",
-    sub: "JavaScript (ES6+) & API",
+    sub: "JavaScript (ES6+)",
     main: "SnapSearch: A Powerful Image Search App",
     desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing the Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
     view: "view Project",
   },
-  {
-    href: "https://arbab57.github.io/ecommerce/",
-    src: "assets/projects/ecommerce.png",
-    sub: "React.js & APIS",
-    main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
-    desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
-    view: "View Project",
-  },
+
   {
     href: "https://arbab57.github.io/avon-login-form/",
     src: "assets/projects/avon.png",
@@ -119,7 +104,40 @@ let projects = [
     desc: "AvonAuth is a robust form with built in validation system designed to provide a user-friendly login and signup experience. Built with a focus on security and ease of use, AvonAuth ensures that user data is protected while offering a seamless Validation experience.",
     view: "View Project",
   },
+  {
+    href: "https://arbab57.github.io/ecommerce/",
+    src: "assets/projects/ecommerce.png",
+    sub: "React.JS",
+    main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
+    desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/PalindromeChecker/",
+    src: "assets/projects/palindrome.png",
+    sub: "JavaScript (ES6+)",
+    main: "Word Wizard: Palindrome Verification",
+    desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
+    view: "view Project",
+  },
+  {
+    href: "https://reactjobsvite.netlify.app/#/",
+    src: "assets/projects/reactjobs.png",
+    sub: "React.JS",
+    main: "ReactJobs: A React JS Job Search Application",
+    desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/flexStart/",
+    src: "assets/projects/flexstart.png",
+    sub: "CSS3 & Frameworks",
+    main: "Digital Doorway: Animated Bootstrap Landing Page",
+    desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
+    view: "view Project",
+  },
 ];
+projects.reverse();
 
 const projectContainer = document.querySelector("#project-container");
 const prevBtn = document.querySelector("#prev-btn");
@@ -127,17 +145,53 @@ const btn1 = document.querySelector("#one-btn");
 const btn2 = document.querySelector("#two-btn");
 const btn3 = document.querySelector("#three-btn");
 const nextBtn = document.querySelector("#next-btn");
+const filters = document.getElementById("filters");
+const order = document.getElementById("oldtonew");
 
 let pageNum = 1;
 totalPages = Math.ceil(projects.length / 6);
 let startingProject = 0;
 let endingProject = 6;
-let newArary;
+let newArary = [...projects];
+let setProjects = [...projects];
+
+filters.addEventListener("change", () => {
+  switch (filters.value) {
+    case "js":
+      setProjects = [...projects];
+      renderProjects(newArary.filter((pro) => pro.sub === "JavaScript (ES6+)"));
+      break;
+    case "react":
+      setProjects = [...projects];
+      renderProjects(newArary.filter((pro) => pro.sub === "React.JS"));
+      break;
+    case "frameworks":
+      setProjects = [...projects];
+      renderProjects(newArary.filter((pro) => pro.sub === "CSS3 & Frameworks"));
+      break;
+    case "all":
+      setProjects = [...projects];
+      renderProjects(newArary);
+      break;
+
+    case "new":
+      newArary = [...projects];
+      setProjects = [...newArary];
+      renderProjects(newArary.slice(startingProject, endingProject));
+      break;
+
+    case "old":
+      newArary = [...projects].reverse();
+
+      setProjects = [...newArary];
+      renderProjects(newArary.slice(startingProject, endingProject));
+      break;
+  }
+});
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  newArary = projects.slice(startingProject, endingProject);
+  renderProjects(projects.slice(startingProject, endingProject));
   pageIndicator();
-  renderProjects(newArary);
 });
 
 const renderProjects = (array) => {
@@ -214,27 +268,24 @@ const renderProjects = (array) => {
 
 nextBtn.addEventListener("click", () => {
   pageNum++;
-  pageNum = pageNum > totalPages ? totalPages : pageNum;
-
+  pageNum = pageNum > totalPages ? 1 : pageNum;
   startingProject = pageNum * 6 - 6;
   endingProject = pageNum * 6;
   endingProject =
     endingProject > projects.length ? projects.length : endingProject;
 
   pageIndicator();
-  newArary = projects.slice(startingProject, endingProject);
-  renderProjects(newArary);
+  renderProjects(setProjects.slice(startingProject, endingProject));
 });
 prevBtn.addEventListener("click", function () {
   pageNum--;
-  pageNum = pageNum === 0 ? 1 : pageNum;
+  pageNum = pageNum === 0 ? totalPages : pageNum;
 
   startingProject = pageNum * 6 - 6;
   endingProject = pageNum * 6;
 
   pageIndicator();
-  newArary = projects.slice(startingProject, endingProject);
-  renderProjects(newArary);
+  renderProjects(setProjects.slice(startingProject, endingProject));
 });
 btn1.addEventListener("click", function () {
   pageFunction(1);
@@ -254,8 +305,7 @@ function pageFunction(input) {
   endingProject =
     endingProject > projects.length + 1 ? projects.length : endingProject;
 
-  newArary = projects.slice(startingProject, endingProject);
-  renderProjects(newArary);
+  renderProjects(setProjects.slice(startingProject, endingProject));
   pageIndicator();
 
   window.scrollTo(0, 10);
