@@ -129,6 +129,14 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://arbab57.github.io/apod/",
+    src: "assets/projects/apod.png",
+    sub: "React.JS",
+    main: "Cosmic Explorer: APOD App in React JS",
+    desc: "Built using React JS, this application interfaces with NASA's Astronomy Picture of the Day (APOD) API to deliver breathtaking images and educational content about our cosmos.",
+    view: "view Project",
+  },
+  {
     href: "https://arbab57.github.io/flexStart/",
     src: "assets/projects/flexstart.png",
     sub: "CSS3 & Frameworks",
