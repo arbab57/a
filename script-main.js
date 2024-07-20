@@ -4,6 +4,137 @@ const slide = document.querySelectorAll(".slide");
 let uy = 0;
 let progres = 0;
 
+let projects = [
+  {
+    href: "https://arbab57.github.io/architecturesite/index.html",
+    src: "assets/projects/project-architecture.png",
+    sub: "CSS3 & Frameworks",
+    main: "Constructing Excellence: Architecture Firm",
+    desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
+    view: "View Project",
+  },
+
+  {
+    href: "https://arbab57.github.io/travel/",
+    src: "assets/projects/697-890.png",
+    sub: "CSS3 & Frameworks",
+    main: "TravelTech: AI-Powered Travel",
+    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
+    view: "View Project",
+  },
+
+  {
+    href: "https://arbab57.github.io/imagesearch/",
+    src: "assets/projects/imagesearch.png",
+    sub: "JavaScript (ES6+)",
+    main: "SnapSearch: A Powerful Image Search App",
+    desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing the Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
+    view: "view Project",
+  },
+
+  {
+    href: "https://reactjobsvite.netlify.app/#/",
+    src: "assets/projects/reactjobs.png",
+    sub: "React.JS",
+    main: "ReactJobs: A React JS Job Search Application",
+    desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/flexStart/",
+    src: "assets/projects/flexstart.png",
+    sub: "CSS3 & Frameworks",
+    main: "Digital Doorway: Animated Bootstrap Landing Page",
+    desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
+    view: "view Project",
+  },
+  {
+    href: "https://arbab57.github.io/ludo/",
+    src: "assets/projects/ludo.png",
+    sub: "JavaScript (ES6+)",
+    main: "LudoFever: A Game Development Project",
+    desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
+    view: "view Project",
+  },
+];
+projects.reverse();
+
+window.onload = () => {
+  render(projects);
+};
+
+const render = (array) => {
+  document.getElementById("con-projects").innerHTML = array
+    .map((project, index) => {
+      if (index % 2 === 0) {
+        return `
+        <div class="row justify-content-center gap-lg-5  p-lg-4  text-sm-start">\
+                  <div id="imgSlide0${
+                    index + 1
+                  }" class="col-xxl-4 col-lg-5 col-md-5 con-project-img slide imgSlide03"><a
+                            class="link-p1" href="${
+                              project.href
+                            }" target="_blank"><img
+                                loading="lazy" id="img-p1" class="project-img"
+                                src="${project.src}" alt=""></a>
+                  </div>
+                  <div
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        <h3 id="sub-p1" class="fs-6 text-muted-3 mb-3">${
+                          project.sub
+                        }</h3>
+                        <h3 class="fs-2 mb-4 fw-normal"><a id="main-p1" class="text-white link-p1"
+                                href="${project.href}" target="_blank">${
+          project.main
+        }</a></h3>
+                        <p id="desc-p1" class="fs-5 text-muted-3 mb-4">${
+                          project.desc
+                        }</p>
+                        <a id="view-p1" class="text-blue-1 fs-5 link-p1" href="${
+                          project.href
+                        }"
+                            target="_blank">View
+                            Project</a>
+                  </div>
+        </div>
+        `;
+      } else if (index % 2 !== 0 || index === 0) {
+        return `
+      <div class="row justify-content-center flex-row-reverse gap-lg-4 p-lg-5 text-sm-start">
+                    <div  id="imgSlide0${
+                      index + 1
+                    }" class="col-xxl-4 col-lg-5 col-md-5 con-project-img slide "><a
+                            class="link-p2" href="${
+                              project.href
+                            }" target="_blank"><img
+                                loading="lazy" id="img-p2" class="project-img"
+                                src="${project.src}" alt=""></a>
+                    </div>
+                    <div
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        <h3 id="sub-p2" class="fs-6 text-muted-3 mb-3">${
+                          project.sub
+                        }</h3>
+                        <h3 class="fs-2 mb-4 fw-normal"><a id="main-p2" class="text-white link-p2"
+                                href="${project.href}" target="_blank">${
+          project.main
+        }</a></h3>
+                        <p id="desc-p2" class="fs-5 text-muted-3 mb-4">${
+                          project.desc
+                        }</p>
+                        <a id="view-p2" class="text-blue-1 fs-5 link-p2" href="${
+                          project.href
+                        }"
+                            target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+      `;
+      }
+    })
+    .join("");
+};
+
 // annoucement
 const conNews = document.querySelector("#con-news");
 
@@ -121,27 +252,17 @@ window.onscroll = function progressFunction() {
     .getPropertyValue("font-size");
 
   if (style === "16px") {
-    imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1600) + "%)";
-    imgSlide01.style.transform =
-      "translateY(" + getSSS(imgSlide01, 1600) + "%)";
-    imgSlide02.style.transform =
-      "translateY(" + getSSS(imgSlide02, 1600) + "%)";
-    imgSlide03.style.transform =
-      "translateY(" + getSSS(imgSlide03, 1600) + "%)";
-    imgSlide04.style.transform =
-      "translateY(" + getSSS(imgSlide04, 1600) + "%)";
-    imgSlide05.style.transform =
-      "translateY(" + getSSS(imgSlide05, 1600) + "%)";
-    imgSlide06.style.transform =
-      "translateY(" + getSSS(imgSlide06, 1600) + "%)";
+    projects.forEach((item, index) => {
+      document.querySelector(`#imgSlide0${index + 1}`).style.transform =
+        "translateY(" +
+        getSSS(document.querySelector(`#imgSlide0${index + 1}`), 1600) +
+        "%)";
+    });
   } else {
-    imgSlide.style.transform = "translateY(0%)";
-    imgSlide01.style.transform = "translateY(0%)";
-    imgSlide02.style.transform = "translateY(0%)";
-    imgSlide03.style.transform = "translateY(0%)";
-    imgSlide04.style.transform = "translateY(0%)";
-    imgSlide05.style.transform = "translateY(0%)";
-    imgSlide06.style.transform = "translateY(0%)";
+    projects.forEach((item, index) => {
+      document.querySelector(`#imgSlide0${index + 1}`).style.transform =
+        "translateY(0%)";
+    });
 
     if (window.scrollY > 200) {
       scrollIcon.classList.remove("scrollIcon");

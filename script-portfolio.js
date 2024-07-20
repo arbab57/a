@@ -63,12 +63,12 @@ let projects = [
   },
 
   {
-    href: "https://arbab57.github.io/travel/",
-    src: "assets/projects/697-890.png",
-    sub: "CSS3 & Frameworks",
-    main: "TravelTech: AI-Powered Travel",
-    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
-    view: "View Project",
+    href: "https://arbab57.github.io/PalindromeChecker/",
+    src: "assets/projects/palindrome.png",
+    sub: "JavaScript (ES6+)",
+    main: "Word Wizard: Palindrome Verification",
+    desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
+    view: "view Project",
   },
 
   {
@@ -113,12 +113,12 @@ let projects = [
     view: "View Project",
   },
   {
-    href: "https://arbab57.github.io/PalindromeChecker/",
-    src: "assets/projects/palindrome.png",
-    sub: "JavaScript (ES6+)",
-    main: "Word Wizard: Palindrome Verification",
-    desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
-    view: "view Project",
+    href: "https://arbab57.github.io/travel/",
+    src: "assets/projects/697-890.png",
+    sub: "CSS3 & Frameworks",
+    main: "TravelTech: AI-Powered Travel",
+    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
+    view: "View Project",
   },
   {
     href: "https://reactjobsvite.netlify.app/#/",
@@ -134,6 +134,14 @@ let projects = [
     sub: "CSS3 & Frameworks",
     main: "Digital Doorway: Animated Bootstrap Landing Page",
     desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
+    view: "view Project",
+  },
+  {
+    href: "https://arbab57.github.io/ludo/",
+    src: "assets/projects/ludo.png",
+    sub: "JavaScript (ES6+)",
+    main: "LudoFever: A Game Development Project",
+    desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
     view: "view Project",
   },
 ];
