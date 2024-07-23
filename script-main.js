@@ -79,7 +79,7 @@ const render = (array) => {
                                 src="${project.src}" alt=""></a>
                   </div>
                   <div
-                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 px-4 my-2 my-sm-0">
                         <h3 id="sub-p1" class="fs-6 text-muted-3 mb-3">${
                           project.sub
                         }</h3>
@@ -111,7 +111,7 @@ const render = (array) => {
                                 src="${project.src}" alt=""></a>
                     </div>
                     <div
-                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 px-4 my-2 my-sm-0">
                         <h3 id="sub-p2" class="fs-6 text-muted-3 mb-3">${
                           project.sub
                         }</h3>
@@ -258,6 +258,7 @@ window.onscroll = function progressFunction() {
         getSSS(document.querySelector(`#imgSlide0${index + 1}`), 1600) +
         "%)";
     });
+    imgSlide.style.transform = "translateY(" + getSSS2(imgSlide, 1100) + "%)";
   } else {
     projects.forEach((item, index) => {
       document.querySelector(`#imgSlide0${index + 1}`).style.transform =
