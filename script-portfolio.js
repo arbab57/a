@@ -226,7 +226,7 @@ const renderProjects = (array) => {
                                 src="${project.src}" alt=""></a>
                   </div>
                   <div
-                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 px-4 my-2 my-sm-0">
                         <h3 id="sub-p1" class="fs-6 text-muted-3 mb-3">${
                           project.sub
                         }</h3>
@@ -258,7 +258,7 @@ const renderProjects = (array) => {
                                 src="${project.src}" alt=""></a>
                     </div>
                     <div
-                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 p-4 my-4 my-sm-0">
+                        class="col-xl-6 col-md-6 d-flex flex-column justify-content-center p-sm-5 px-4 my-2 my-sm-0">
                         <h3 id="sub-p2" class="fs-6 text-muted-3 mb-3">${
                           project.sub
                         }</h3>
