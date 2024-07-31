@@ -2,22 +2,6 @@
 
 let projects = [
   {
-    href: "https://arbab57.github.io/portfolio/",
-    src: "assets/projects/project-portfolio-1.png",
-    sub: "CSS3 & Frameworks",
-    main: "Design Portfolio: WhereArt Meets Code",
-    desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
-    view: "View Project",
-  },
-  {
-    href: "https://arbab57.github.io/portfolio2/",
-    src: "assets/projects/portfolio-practice.png",
-    sub: "CSS3 & Frameworks",
-    main: "Empowering Innovaters: Portfolio",
-    desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
-    view: "View Project",
-  },
-  {
     href: "https://arbab57.github.io/stopwatch/",
     src: "assets/projects/stopwatch.png",
     sub: "JavaScript (ES6+)",
@@ -27,30 +11,12 @@ let projects = [
   },
 
   {
-    href: "https://arbab57.github.io/onlineCourses/",
-    src: "assets/projects/project- courses.png",
-    sub: "CSS3 & Frameworks",
-    main: "MindMax: Maximizing Potential through Online Learning",
-    desc: "I'm thrilled to have created an impactful learning experience that has already seen significant student engagement and success. It was a pleasure collaborating with the team to bring their vision to life!",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/architecturesite/index.html",
-    src: "assets/projects/project-architecture.png",
-    sub: "CSS3 & Frameworks",
-    main: "Constructing Excellence: Architecture Firm",
-    desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/bookstore/",
-    src: "assets/projects/project-ourtracks.png",
-    sub: "CSS3 & Frameworks",
-    main: "The Book Haven: E-commerce Solution",
-    desc: "Integrating the payment gateway and book catalog APIs. Optimizing the site for performance and scalability. Ensuring security and data privacy.",
-    view: "View Project",
+    href: "https://arbab57.github.io/todolist/",
+    src: "assets/projects/todolist.png",
+    sub: "React.JS",
+    main: "TaskTracker: A Responsive Todo List Application",
+    desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
+    view: "view Project",
   },
 
   {
@@ -70,6 +36,40 @@ let projects = [
     desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
     view: "view Project",
   },
+  {
+    href: "https://arbab57.github.io/ecommerce/",
+    src: "assets/projects/ecommerce.png",
+    sub: "React.JS",
+    main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
+    desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
+    view: "View Project",
+  },
+  {
+    href: "https://arbab57.github.io/portfolio2/",
+    src: "assets/projects/portfolio-practice.png",
+    sub: "CSS3 & Frameworks",
+    main: "Empowering Innovaters: Portfolio",
+    desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
+    view: "View Project",
+  },
+
+  {
+    href: "https://arbab57.github.io/onlineCourses/",
+    src: "assets/projects/project- courses.png",
+    sub: "CSS3 & Frameworks",
+    main: "MindMax: Maximizing Potential through Online Learning",
+    desc: "I'm thrilled to have created an impactful learning experience that has already seen significant student engagement and success. It was a pleasure collaborating with the team to bring their vision to life!",
+    view: "View Project",
+  },
+
+  {
+    href: "https://arbab57.github.io/bookstore/",
+    src: "assets/projects/project-ourtracks.png",
+    sub: "CSS3 & Frameworks",
+    main: "The Book Haven: E-commerce Solution",
+    desc: "Integrating the payment gateway and book catalog APIs. Optimizing the site for performance and scalability. Ensuring security and data privacy.",
+    view: "View Project",
+  },
 
   {
     href: "https://arbab57.github.io/portfolioreact/",
@@ -79,12 +79,13 @@ let projects = [
     desc: "Built using React.js, this portfolio demonstrates my proficiency in developing scalable, efficient, and interactive applications. The project features a curated selection of components and applications.",
     view: "view Project",
   },
+
   {
-    href: "https://arbab57.github.io/todolist/",
-    src: "assets/projects/todolist.png",
+    href: "https://arbab57.github.io/apod/",
+    src: "assets/projects/apod.png",
     sub: "React.JS",
-    main: "TaskTracker: A Responsive Todo List Application",
-    desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
+    main: "Cosmic Explorer: APOD App in React JS",
+    desc: "Built using React JS, this application interfaces with NASA's Astronomy Picture of the Day (APOD) API to deliver breathtaking images and educational content about our cosmos.",
     view: "view Project",
   },
   {
@@ -105,11 +106,11 @@ let projects = [
     view: "View Project",
   },
   {
-    href: "https://arbab57.github.io/ecommerce/",
-    src: "assets/projects/ecommerce.png",
-    sub: "React.JS",
-    main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
-    desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
+    href: "https://arbab57.github.io/portfolio/",
+    src: "assets/projects/project-portfolio-1.png",
+    sub: "CSS3 & Frameworks",
+    main: "Design Portfolio: WhereArt Meets Code",
+    desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
     view: "View Project",
   },
   {
@@ -129,12 +130,12 @@ let projects = [
     view: "View Project",
   },
   {
-    href: "https://arbab57.github.io/apod/",
-    src: "assets/projects/apod.png",
-    sub: "React.JS",
-    main: "Cosmic Explorer: APOD App in React JS",
-    desc: "Built using React JS, this application interfaces with NASA's Astronomy Picture of the Day (APOD) API to deliver breathtaking images and educational content about our cosmos.",
-    view: "view Project",
+    href: "https://arbab57.github.io/architecturesite/index.html",
+    src: "assets/projects/project-architecture.png",
+    sub: "CSS3 & Frameworks",
+    main: "Constructing Excellence: Architecture Firm",
+    desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
+    view: "View Project",
   },
   {
     href: "https://arbab57.github.io/flexStart/",
