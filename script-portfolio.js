@@ -130,6 +130,14 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://github.com/arbab57/timetrackerbackend",
+    src: "assets/projects/timetrackerbackend.png",
+    sub: "Node.js",
+    main: "ClockIt Backend: Time Tracking & Project Management API",
+    desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end. The backend is fully implemented but for demonstration purposes, the frontend uses local storage instead of live API calls.",
+    view: "view Project",
+  },
+  {
     href: "https://arbab57.github.io/architecturesite/index.html",
     src: "assets/projects/project-architecture.png",
     sub: "CSS3 & Frameworks",
@@ -190,6 +198,10 @@ filters.addEventListener("change", () => {
       setProjects = [...projects];
       renderProjects(newArary.filter((pro) => pro.sub === "React.JS"));
       break;
+      case "node":
+        setProjects = [...projects];
+        renderProjects(newArary.filter((pro) => pro.sub === "Node.js"));
+        break;
     case "frameworks":
       setProjects = [...projects];
       renderProjects(newArary.filter((pro) => pro.sub === "CSS3 & Frameworks"));
