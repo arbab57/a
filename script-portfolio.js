@@ -153,6 +153,14 @@ let projects = [
     desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
     view: "view Project",
   },
+  {
+    href: "https://clockittimetracker.netlify.app/",
+    src: "assets/projects/clockit.png",
+    sub: "React.JS",
+    main: "ClockIt: Time Tracking & Project Management",
+    desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface. Experience the full power of ClockIt with its robust backend capabilities and simplified local storage integration.",
+    view: "view Project",
+  },
 ];
 projects.reverse();
 
