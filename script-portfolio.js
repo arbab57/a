@@ -1,18 +1,229 @@
 // changing projects without refreshing
 
+// let projects = [
+//   {
+//     href: "https://arbab57.github.io/stopwatch/",
+//     src: "assets/projects/stopwatch.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "ClockIt: A Simple and Intuitive Stopwatch",
+//     desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
+//     view: "view Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/todolist/",
+//     src: "assets/projects/todolist.png",
+//     sub: "React.JS",
+//     main: "TaskTracker: A Responsive Todo List Application",
+//     desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/calculator/",
+//     src: "assets/projects/calculator.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "CalcMaster: A Responsive Calculator App",
+//     desc: "Experience a user-friendly calculator design project aimed at providing a seamless and intuitive calculation experience, with easy-to-use buttons, clear display, and customizable settings.",
+//     view: "view Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/PalindromeChecker/",
+//     src: "assets/projects/palindrome.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "Word Wizard: Palindrome Verification",
+//     desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/ecommerce/",
+//     src: "assets/projects/ecommerce.png",
+//     sub: "React.JS",
+//     main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
+//     desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/portfolio2/",
+//     src: "assets/projects/portfolio-practice.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "Empowering Innovaters: Portfolio",
+//     desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
+//     view: "View Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/onlineCourses/",
+//     src: "assets/projects/project- courses.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "MindMax: Maximizing Potential through Online Learning",
+//     desc: "I'm thrilled to have created an impactful learning experience that has already seen significant student engagement and success. It was a pleasure collaborating with the team to bring their vision to life!",
+//     view: "View Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/bookstore/",
+//     src: "assets/projects/project-ourtracks.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "The Book Haven: E-commerce Solution",
+//     desc: "Integrating the payment gateway and book catalog APIs. Optimizing the site for performance and scalability. Ensuring security and data privacy.",
+//     view: "View Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/portfolioreact/",
+//     src: "assets/projects/portfolioreact.png",
+//     sub: "React.JS",
+//     main: "ComponentCraft: A React.js Portfolio",
+//     desc: "Built using React.js, this portfolio demonstrates my proficiency in developing scalable, efficient, and interactive applications. The project features a curated selection of components and applications.",
+//     view: "view Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/apod/",
+//     src: "assets/projects/apod.png",
+//     sub: "React.JS",
+//     main: "Cosmic Explorer: APOD App in React JS",
+//     desc: "Built using React JS, this application interfaces with NASA's Astronomy Picture of the Day (APOD) API to deliver breathtaking images and educational content about our cosmos.",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/imagesearch/",
+//     src: "assets/projects/imagesearch.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "SnapSearch: A Powerful Image Search App",
+//     desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing the Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
+//     view: "view Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/avon-login-form/",
+//     src: "assets/projects/avon.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "AvonAuth: Secure Login and Signup Form with Validation",
+//     desc: "AvonAuth is a robust form with built in validation system designed to provide a user-friendly login and signup experience. Built with a focus on security and ease of use, AvonAuth ensures that user data is protected while offering a seamless Validation experience.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://reactjobsvite.netlify.app/#/",
+//     src: "assets/projects/reactjobs.png",
+//     sub: "React.JS",
+//     main: "ReactJobs: A React JS Job Search Application",
+//     desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://github.com/arbab57/timetrackerbackend",
+//     src: "assets/projects/timetrackerbackend.png",
+//     sub: "Node.js",
+//     main: "ClockIt Backend: Time Tracking & Project Management API",
+//     desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end.",
+//     view: "view Project",
+//   },
+
+//   {
+//     href: "https://arbab57.github.io/portfolio/",
+//     src: "assets/projects/project-portfolio-1.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "Design Portfolio: WhereArt Meets Code",
+//     desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/travel/",
+//     src: "assets/projects/697-890.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "TravelTech: AI-Powered Travel",
+//     desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://github.com/arbab57/E-Learn-Backend",
+//     src: "assets/projects/elearnbackend.png",
+//     sub: "Node.js",
+//     main: "E-Learn: E-Learning Platform Backend",
+//     desc: "Built with the MERN stack, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. The system is fully functional.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://elearnfronentdemo.netlify.app/",
+//     src: "assets/projects/elearnfrontend.png",
+//     sub: "React.JS",
+//     main: "E-Learn: Frontend for E-Learning Platform",
+//     desc: "The E-Learn frontend is a visually engaging and interactive user interface built with React.js. This static version of the e-learning platform showcases key features such as course browsing, user profiles, and interactive elements, using static data to demonstrate the app's functionality and design.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://linkuplandingpage.netlify.app/",
+//     src: "assets/projects/linkupfrontend.png",
+//     sub: "React.JS",
+//     main: "LinkUp: Connect and Share",
+//     desc: "LinkUp is a social media platform designed for seamless connection. This landing page provides a preview of the app's modern interface, showcasing user profiles, posts, and interactions.The backend supports real-time updates, secure authentication, and content sharing. Discover how LinkUp can connect people with a clean, responsive UI and engaging social features.",
+//     view: "View Project",
+//   },
+
+//   {
+//     href: "https://github.com/arbab57/link-up",
+//     src: "assets/projects/linkupbackend.png",
+//     sub: "Node.js",
+//     main: "Link-Up: Social Media App Backend",
+//     desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/architecturesite/index.html",
+//     src: "assets/projects/project-architecture.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "Constructing Excellence: Architecture Firm",
+//     desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
+//     view: "View Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/flexStart/",
+//     src: "assets/projects/flexstart.png",
+//     sub: "CSS3 & Frameworks",
+//     main: "Digital Doorway: Animated Bootstrap Landing Page",
+//     desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://arbab57.github.io/ludo/",
+//     src: "assets/projects/ludo.png",
+//     sub: "JavaScript (ES6+)",
+//     main: "LudoFever: A Game Development Project",
+//     desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://clockittimetracker.netlify.app/",
+//     src: "assets/projects/clockit.png",
+//     sub: "React.JS",
+//     main: "ClockIt: Time Tracking & Project Management",
+//     desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
+//     view: "view Project",
+//   },
+//   {
+//     href: "https://adminpanaldemo.netlify.app/",
+//     src: "assets/projects/elearnadmin.png",
+//     sub: "React.JS",
+//     main: "E-Learn Admin Panel: Manage Your E-Learning Platform",
+//     desc: "The E-Learn Admin Panel is a powerful tool built with React.js for comprehensive management of courses, mentors, reviews, and more. Featuring intuitive dashboards with charts and analytics, this panel provides an easy way to oversee and optimize your e-learning platform’s operations.",
+//     view: "View Project",
+//   }
+
+// ];
 let projects = [
   {
     href: "https://arbab57.github.io/stopwatch/",
-    src: "assets/projects/stopwatch.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971535/x5bbzu71y2lobvzfay8u.png",
     sub: "JavaScript (ES6+)",
     main: "ClockIt: A Simple and Intuitive Stopwatch",
     desc: "Built with HTML, CSS, and JavaScript, CLockIt is a responsive and user-friendly stopwatch app designed for athletes, fitness enthusiasts, and anyone needing precise timing. feel free to adapt it for your projects.",
     view: "view Project",
   },
-
   {
     href: "https://arbab57.github.io/todolist/",
-    src: "assets/projects/todolist.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971536/dq8pdfjxojmqpclmsvxl.png",
     sub: "React.JS",
     main: "TaskTracker: A Responsive Todo List Application",
     desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
@@ -20,16 +231,15 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/calculator/",
-    src: "assets/projects/calculator.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971536/ibahqngk7v6delsjqp08.png",
     sub: "JavaScript (ES6+)",
     main: "CalcMaster: A Responsive Calculator App",
     desc: "Experience a user-friendly calculator design project aimed at providing a seamless and intuitive calculation experience, with easy-to-use buttons, clear display, and customizable settings.",
     view: "view Project",
   },
-
   {
     href: "https://arbab57.github.io/PalindromeChecker/",
-    src: "assets/projects/palindrome.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971538/cupfkacmqfzcudvkm509.png",
     sub: "JavaScript (ES6+)",
     main: "Word Wizard: Palindrome Verification",
     desc: "A web-based application that checks whether a given string is a palindrome or not. A palindrome is a word, phrase, or sequence that reads the same backward as forward.",
@@ -37,7 +247,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/ecommerce/",
-    src: "assets/projects/ecommerce.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971539/xeir49m3f3m2njmgcsy7.png",
     sub: "React.JS",
     main: "ReactStore: A Customizable Ecommerce Solution with API Integration",
     desc: "ReactStore combines the power of React.js with the flexibility of API integrations to create a powerful e-commerce solution tailored to meet the diverse needs of online businesses.",
@@ -45,43 +255,39 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/portfolio2/",
-    src: "assets/projects/portfolio-practice.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971540/sbfgzhrkqxvrb7tgulql.png",
     sub: "CSS3 & Frameworks",
     main: "Empowering Innovaters: Portfolio",
     desc: "Clean, modern, and responsive design. High-quality images and graphics. Interactive elements, such as hover effects and animations. Easy navigation and clear information architecture. Mobile-friendly and accessible design.",
     view: "View Project",
   },
-
   {
     href: "https://arbab57.github.io/onlineCourses/",
-    src: "assets/projects/project- courses.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971541/gguxkn83bc1k1gg8k6re.png",
     sub: "CSS3 & Frameworks",
     main: "MindMax: Maximizing Potential through Online Learning",
     desc: "I'm thrilled to have created an impactful learning experience that has already seen significant student engagement and success. It was a pleasure collaborating with the team to bring their vision to life!",
     view: "View Project",
   },
-
   {
     href: "https://arbab57.github.io/bookstore/",
-    src: "assets/projects/project-ourtracks.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971542/xiiesgiqad9p6crzpxyr.png",
     sub: "CSS3 & Frameworks",
     main: "The Book Haven: E-commerce Solution",
     desc: "Integrating the payment gateway and book catalog APIs. Optimizing the site for performance and scalability. Ensuring security and data privacy.",
     view: "View Project",
   },
-
   {
     href: "https://arbab57.github.io/portfolioreact/",
-    src: "assets/projects/portfolioreact.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971543/kzqcjdijejmnftuoaend.png",
     sub: "React.JS",
     main: "ComponentCraft: A React.js Portfolio",
     desc: "Built using React.js, this portfolio demonstrates my proficiency in developing scalable, efficient, and interactive applications. The project features a curated selection of components and applications.",
     view: "view Project",
   },
-
   {
     href: "https://arbab57.github.io/apod/",
-    src: "assets/projects/apod.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971544/hbjvioklizf3pxpg15ce.png",
     sub: "React.JS",
     main: "Cosmic Explorer: APOD App in React JS",
     desc: "Built using React JS, this application interfaces with NASA's Astronomy Picture of the Day (APOD) API to deliver breathtaking images and educational content about our cosmos.",
@@ -89,16 +295,15 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/imagesearch/",
-    src: "assets/projects/imagesearch.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971545/sqdwwbyjuzrhhui5hvbq.png",
     sub: "JavaScript (ES6+)",
     main: "SnapSearch: A Powerful Image Search App",
     desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing the Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
     view: "view Project",
   },
-
   {
     href: "https://arbab57.github.io/avon-login-form/",
-    src: "assets/projects/avon.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971546/qb4bzhnhmclln8ezxneq.png",
     sub: "JavaScript (ES6+)",
     main: "AvonAuth: Secure Login and Signup Form with Validation",
     desc: "AvonAuth is a robust form with built in validation system designed to provide a user-friendly login and signup experience. Built with a focus on security and ease of use, AvonAuth ensures that user data is protected while offering a seamless Validation experience.",
@@ -106,7 +311,7 @@ let projects = [
   },
   {
     href: "https://reactjobsvite.netlify.app/#/",
-    src: "assets/projects/reactjobs.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971547/mqnbvlsssdb0n13vwimi.png",
     sub: "React.JS",
     main: "ReactJobs: A React JS Job Search Application",
     desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
@@ -114,16 +319,15 @@ let projects = [
   },
   {
     href: "https://github.com/arbab57/timetrackerbackend",
-    src: "assets/projects/timetrackerbackend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971548/nxjdhvf8yxzsifqfzxoz.png",
     sub: "Node.js",
     main: "ClockIt Backend: Time Tracking & Project Management API",
     desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end.",
     view: "view Project",
   },
-  
   {
     href: "https://arbab57.github.io/portfolio/",
-    src: "assets/projects/project-portfolio-1.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971549/z0zdscb61exx3lfevqpd.png",
     sub: "CSS3 & Frameworks",
     main: "Design Portfolio: WhereArt Meets Code",
     desc: " I built a stunning design portfolio website to showcase my creative journey and highlight my expertise in web development. This project was a labor of love, allowing me to combine my passion for design and coding to create a truly unique and interactive experience.",
@@ -131,7 +335,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/travel/",
-    src: "assets/projects/697-890.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971550/huodugjdvht0q3mop1oh.png",
     sub: "CSS3 & Frameworks",
     main: "TravelTech: AI-Powered Travel",
     desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
@@ -139,15 +343,15 @@ let projects = [
   },
   {
     href: "https://github.com/arbab57/E-Learn-Backend",
-    src: "assets/projects/elearnbackend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971551/lkm7jfuzhncmcjergolx.png",
     sub: "Node.js",
     main: "E-Learn: E-Learning Platform Backend",
     desc: "Built with the MERN stack, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. The system is fully functional.",
     view: "View Project",
-  }, 
+  },
   {
     href: "https://elearnfronentdemo.netlify.app/",
-    src: "assets/projects/elearnfrontend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971552/u53todqoejxoqjho6tvc.png",
     sub: "React.JS",
     main: "E-Learn: Frontend for E-Learning Platform",
     desc: "The E-Learn frontend is a visually engaging and interactive user interface built with React.js. This static version of the e-learning platform showcases key features such as course browsing, user profiles, and interactive elements, using static data to demonstrate the app's functionality and design.",
@@ -155,24 +359,23 @@ let projects = [
   },
   {
     href: "https://linkuplandingpage.netlify.app/",
-    src: "assets/projects/linkupfrontend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971553/fhtooxtiiizzrmqv7duo.png",
     sub: "React.JS",
     main: "LinkUp: Connect and Share",
     desc: "LinkUp is a social media platform designed for seamless connection. This landing page provides a preview of the app's modern interface, showcasing user profiles, posts, and interactions.The backend supports real-time updates, secure authentication, and content sharing. Discover how LinkUp can connect people with a clean, responsive UI and engaging social features.",
     view: "View Project",
   },
- 
   {
     href: "https://github.com/arbab57/link-up",
-    src: "assets/projects/linkupbackend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971555/wc41owwvxoosigvvzlqv.png",
     sub: "Node.js",
     main: "Link-Up: Social Media App Backend",
     desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
     view: "View Project",
-  }, 
+  },
   {
     href: "https://arbab57.github.io/architecturesite/index.html",
-    src: "assets/projects/project-architecture.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971556/e5upyfiioa5dziuy7xse.png",
     sub: "CSS3 & Frameworks",
     main: "Constructing Excellence: Architecture Firm",
     desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
@@ -180,7 +383,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/flexStart/",
-    src: "assets/projects/flexstart.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971557/sqjr1il0vlpmdcykd7yf.png",
     sub: "CSS3 & Frameworks",
     main: "Digital Doorway: Animated Bootstrap Landing Page",
     desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
@@ -188,7 +391,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/ludo/",
-    src: "assets/projects/ludo.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971557/l9pbl7ryefkb5pf1qn0x.png",
     sub: "JavaScript (ES6+)",
     main: "LudoFever: A Game Development Project",
     desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
@@ -196,7 +399,7 @@ let projects = [
   },
   {
     href: "https://clockittimetracker.netlify.app/",
-    src: "assets/projects/clockit.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971559/ub7sh03ensv9hgqwyd9w.png",
     sub: "React.JS",
     main: "ClockIt: Time Tracking & Project Management",
     desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
@@ -204,14 +407,14 @@ let projects = [
   },
   {
     href: "https://adminpanaldemo.netlify.app/",
-    src: "assets/projects/elearnadmin.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971560/rpulynfwmxihyahhlxgi.png",
     sub: "React.JS",
     main: "E-Learn Admin Panel: Manage Your E-Learning Platform",
     desc: "The E-Learn Admin Panel is a powerful tool built with React.js for comprehensive management of courses, mentors, reviews, and more. Featuring intuitive dashboards with charts and analytics, this panel provides an easy way to oversee and optimize your e-learning platform’s operations.",
     view: "View Project",
-  }
-  
+  },
 ];
+
 projects.reverse();
 
 const projectContainer = document.querySelector("#project-container");
@@ -241,10 +444,10 @@ filters.addEventListener("change", () => {
       setProjects = [...projects];
       renderProjects(newArary.filter((pro) => pro.sub === "React.JS"));
       break;
-      case "node":
-        setProjects = [...projects];
-        renderProjects(newArary.filter((pro) => pro.sub === "Node.js"));
-        break;
+    case "node":
+      setProjects = [...projects];
+      renderProjects(newArary.filter((pro) => pro.sub === "Node.js"));
+      break;
     case "frameworks":
       setProjects = [...projects];
       renderProjects(newArary.filter((pro) => pro.sub === "CSS3 & Frameworks"));
