@@ -122,6 +122,14 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://linkuplandingpage.netlify.app/",
+    src: "assets/projects/linkupfrontend.png",
+    sub: "React.JS",
+    main: "LinkUp: Connect and Share",
+    desc: "LinkUp is a social media platform designed for seamless connection. This landing page provides a preview of the app's modern interface, showcasing user profiles, posts, and interactions.The backend supports real-time updates, secure authentication, and content sharing. Discover how LinkUp can connect people with a clean, responsive UI and engaging social features.",
+    view: "View Project",
+  },
+  {
     href: "https://reactjobsvite.netlify.app/#/",
     src: "assets/projects/reactjobs.png",
     sub: "React.JS",
