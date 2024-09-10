@@ -130,6 +130,14 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://github.com/arbab57/link-up",
+    src: "assets/projects/linkupbackend.png",
+    sub: "Node.js",
+    main: "Link-Up: Social Media App Backend",
+    desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
+    view: "View Project",
+  },  
+  {
     href: "https://github.com/arbab57/E-Learn-Backend",
     src: "assets/projects/elearnbackend.png",
     sub: "Node.js",
