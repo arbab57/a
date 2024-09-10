@@ -200,6 +200,15 @@ let projects = [
     desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
     view: "view Project",
   },
+  {
+    href: "https://adminpanaldemo.netlify.app/",
+    src: "assets/projects/elearnadmin.png",
+    sub: "React.JS",
+    main: "E-Learn Admin Panel: Manage Your E-Learning Platform",
+    desc: "The E-Learn Admin Panel is a powerful tool built with React.js for comprehensive management of courses, mentors, reviews, and more. Featuring intuitive dashboards with charts and analytics, this panel provides an easy way to oversee and optimize your e-learning platform’s operations.",
+    view: "View Project",
+  }
+  
 ];
 projects.reverse();
 
