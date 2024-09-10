@@ -19,14 +19,6 @@ let projects = [
     view: "view Project",
   },
   {
-    href: "https://elearnfronentdemo.netlify.app/",
-    src: "assets/projects/elearnfrontend.png",
-    sub: "React.JS",
-    main: "E-Learn: Frontend for E-Learning Platform",
-    desc: "The E-Learn frontend is a visually engaging and interactive user interface built with React.js. This static version of the e-learning platform showcases key features such as course browsing, user profiles, and interactive elements, using static data to demonstrate the app's functionality and design.",
-    view: "View Project",
-  },
-  {
     href: "https://arbab57.github.io/calculator/",
     src: "assets/projects/calculator.png",
     sub: "JavaScript (ES6+)",
@@ -113,6 +105,23 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://reactjobsvite.netlify.app/#/",
+    src: "assets/projects/reactjobs.png",
+    sub: "React.JS",
+    main: "ReactJobs: A React JS Job Search Application",
+    desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
+    view: "View Project",
+  },
+  {
+    href: "https://github.com/arbab57/timetrackerbackend",
+    src: "assets/projects/timetrackerbackend.png",
+    sub: "Node.js",
+    main: "ClockIt Backend: Time Tracking & Project Management API",
+    desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end.",
+    view: "view Project",
+  },
+  
+  {
     href: "https://arbab57.github.io/portfolio/",
     src: "assets/projects/project-portfolio-1.png",
     sub: "CSS3 & Frameworks",
@@ -129,6 +138,22 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://github.com/arbab57/E-Learn-Backend",
+    src: "assets/projects/elearnbackend.png",
+    sub: "Node.js",
+    main: "E-Learn: E-Learning Platform Backend",
+    desc: "Built with the MERN stack, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. The system is fully functional.",
+    view: "View Project",
+  }, 
+  {
+    href: "https://elearnfronentdemo.netlify.app/",
+    src: "assets/projects/elearnfrontend.png",
+    sub: "React.JS",
+    main: "E-Learn: Frontend for E-Learning Platform",
+    desc: "The E-Learn frontend is a visually engaging and interactive user interface built with React.js. This static version of the e-learning platform showcases key features such as course browsing, user profiles, and interactive elements, using static data to demonstrate the app's functionality and design.",
+    view: "View Project",
+  },
+  {
     href: "https://linkuplandingpage.netlify.app/",
     src: "assets/projects/linkupfrontend.png",
     sub: "React.JS",
@@ -136,14 +161,7 @@ let projects = [
     desc: "LinkUp is a social media platform designed for seamless connection. This landing page provides a preview of the app's modern interface, showcasing user profiles, posts, and interactions.The backend supports real-time updates, secure authentication, and content sharing. Discover how LinkUp can connect people with a clean, responsive UI and engaging social features.",
     view: "View Project",
   },
-  {
-    href: "https://reactjobsvite.netlify.app/#/",
-    src: "assets/projects/reactjobs.png",
-    sub: "React.JS",
-    main: "ReactJobs: A React JS Job Search Application",
-    desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
-    view: "View Project",
-  },
+ 
   {
     href: "https://github.com/arbab57/link-up",
     src: "assets/projects/linkupbackend.png",
@@ -151,23 +169,7 @@ let projects = [
     main: "Link-Up: Social Media App Backend",
     desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
     view: "View Project",
-  },  
-  {
-    href: "https://github.com/arbab57/E-Learn-Backend",
-    src: "assets/projects/elearnbackend.png",
-    sub: "Node.js",
-    main: "E-Learn: E-Learning Platform Backend",
-    desc: "Built with the MERN stack, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. The system is fully functional.",
-    view: "View Project",
-  },  
-  {
-    href: "https://github.com/arbab57/timetrackerbackend",
-    src: "assets/projects/timetrackerbackend.png",
-    sub: "Node.js",
-    main: "ClockIt Backend: Time Tracking & Project Management API",
-    desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end.",
-    view: "view Project",
-  },
+  }, 
   {
     href: "https://arbab57.github.io/architecturesite/index.html",
     src: "assets/projects/project-architecture.png",
@@ -217,6 +219,7 @@ const prevBtn = document.querySelector("#prev-btn");
 const btn1 = document.querySelector("#one-btn");
 const btn2 = document.querySelector("#two-btn");
 const btn3 = document.querySelector("#three-btn");
+const btn4 = document.querySelector("#four-btn");
 const nextBtn = document.querySelector("#next-btn");
 const filters = document.getElementById("filters");
 const order = document.getElementById("oldtonew");
@@ -373,6 +376,9 @@ btn2.addEventListener("click", function () {
 btn3.addEventListener("click", function () {
   pageFunction(3);
 });
+btn4.addEventListener("click", function () {
+  pageFunction(4);
+});
 
 function pageFunction(input) {
   pageNum = input;
@@ -403,6 +409,11 @@ function pageIndicator() {
     btn3.style.backgroundColor = "#2f89fc";
   } else {
     btn3.style.backgroundColor = "#1e1e1e";
+  }
+  if (pageNum === 4) {
+    btn4.style.backgroundColor = "#2f89fc";
+  } else {
+    btn4.style.backgroundColor = "#1e1e1e";
   }
 }
 

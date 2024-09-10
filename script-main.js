@@ -6,38 +6,19 @@ let progres = 0;
 
 let projects = [
   {
+    href: "https://github.com/arbab57/link-up",
+    src: "assets/projects/linkupbackend.png",
+    sub: "Node.js",
+    main: "Link-Up: Social Media App Backend",
+    desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
+    view: "View Project",
+  }, 
+  {
     href: "https://arbab57.github.io/architecturesite/index.html",
     src: "assets/projects/project-architecture.png",
     sub: "CSS3 & Frameworks",
     main: "Constructing Excellence: Architecture Firm",
     desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/travel/",
-    src: "assets/projects/697-890.png",
-    sub: "CSS3 & Frameworks",
-    main: "TravelTech: AI-Powered Travel",
-    desc: "Integrating data from various sources, such as flight APIs, hotel booking engines, and activity providers.Ensuring a seamless user experience across various devices and screen sizes.",
-    view: "View Project",
-  },
-
-  {
-    href: "https://arbab57.github.io/imagesearch/",
-    src: "assets/projects/imagesearch.png",
-    sub: "JavaScript (ES6+)",
-    main: "SnapSearch: A Powerful Image Search App",
-    desc: "SnapSearch is an image search application designed to provide users with a seamless and efficient way to find images across the web. Utilizing the Unsplash API, SnapSearch analyzes image content and delivers precise search results based on user queries.",
-    view: "view Project",
-  },
-
-  {
-    href: "https://reactjobsvite.netlify.app/#/",
-    src: "assets/projects/reactjobs.png",
-    sub: "React.JS",
-    main: "ReactJobs: A React JS Job Search Application",
-    desc: "A fully functional job search website built using React JS, providing a seamless user experience for job seekers and employers alike. Built using the popular React library for efficient and scalable development",
     view: "View Project",
   },
   {
@@ -56,6 +37,22 @@ let projects = [
     desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
     view: "view Project",
   },
+  {
+    href: "https://clockittimetracker.netlify.app/",
+    src: "assets/projects/clockit.png",
+    sub: "React.JS",
+    main: "ClockIt: Time Tracking & Project Management",
+    desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
+    view: "view Project",
+  },
+  {
+    href: "https://adminpanaldemo.netlify.app/",
+    src: "assets/projects/elearnadmin.png",
+    sub: "React.JS",
+    main: "E-Learn Admin Panel: Manage Your E-Learning Platform",
+    desc: "The E-Learn Admin Panel is a powerful tool built with React.js for comprehensive management of courses, mentors, reviews, and more. Featuring intuitive dashboards with charts and analytics, this panel provides an easy way to oversee and optimize your e-learning platform’s operations.",
+    view: "View Project",
+  }
 ];
 projects.reverse();
 
