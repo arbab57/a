@@ -157,7 +157,7 @@ let projects = [
     src: "assets/projects/elearnbackend.png",
     sub: "Node.js",
     main: "E-Learn: E-Learning Platform Backend",
-    desc: "Built with the MERN stack, the E-Learn backend powers a comprehensive e-learning platform, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. Designed to interact smoothly with the frontend, the backend ensures a seamless experience for both students and mentors. The system is fully functional, providing a robust API for the platform's learning management features.",
+    desc: "Built with the MERN stack, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. The system is fully functional.",
     view: "View Project",
   },  
   {
@@ -165,7 +165,7 @@ let projects = [
     src: "assets/projects/timetrackerbackend.png",
     sub: "Node.js",
     main: "ClockIt Backend: Time Tracking & Project Management API",
-    desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end. The backend is fully implemented but for demonstration purposes, the frontend uses local storage instead of live API calls.",
+    desc: "Developed using Node.js and Express, the ClockIt backend handles all time tracking and project management functionalities for the ClockIt app. This robust backend supports user authentication, project management, and time logging, with endpoints designed to interact seamlessly with the app's front end.",
     view: "view Project",
   },
   {
@@ -197,7 +197,7 @@ let projects = [
     src: "assets/projects/clockit.png",
     sub: "React.JS",
     main: "ClockIt: Time Tracking & Project Management",
-    desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface. Experience the full power of ClockIt with its robust backend capabilities and simplified local storage integration.",
+    desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
     view: "view Project",
   },
 ];
