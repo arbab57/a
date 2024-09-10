@@ -7,15 +7,15 @@ let progres = 0;
 let projects = [
   {
     href: "https://github.com/arbab57/link-up",
-    src: "assets/projects/linkupbackend.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971555/wc41owwvxoosigvvzlqv.png",
     sub: "Node.js",
     main: "Link-Up: Social Media App Backend",
     desc: "Developed using Node.js and Express, the Link-Up backend powers a dynamic social media platform. Features such as user authentication, profile management, posting, commenting, and real-time interactions. With JWT-based authentication and a MongoDB database, The API is designed to handle large volumes of user-generated content efficiently and integrates seamlessly with the frontend.",
     view: "View Project",
-  }, 
+  },
   {
     href: "https://arbab57.github.io/architecturesite/index.html",
-    src: "assets/projects/project-architecture.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971556/e5upyfiioa5dziuy7xse.png",
     sub: "CSS3 & Frameworks",
     main: "Constructing Excellence: Architecture Firm",
     desc: "Responsive design for a seamless user experience across devices. Interactive project gallery. Integrated blog for sharing industry insights and news Optimized performance for fast loading times",
@@ -23,7 +23,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/flexStart/",
-    src: "assets/projects/flexstart.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971557/sqjr1il0vlpmdcykd7yf.png",
     sub: "CSS3 & Frameworks",
     main: "Digital Doorway: Animated Bootstrap Landing Page",
     desc: "This project demonstrates my ability to create effective landing pages that drive results. Whether you need a landing page for a product launch, campaign, or business promotion, I've got you covered!",
@@ -31,7 +31,7 @@ let projects = [
   },
   {
     href: "https://arbab57.github.io/ludo/",
-    src: "assets/projects/ludo.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971557/l9pbl7ryefkb5pf1qn0x.png",
     sub: "JavaScript (ES6+)",
     main: "LudoFever: A Game Development Project",
     desc: "LudoFever is an innovative project aimed at bringing the classic board game Ludo into the digital realm. This project was chosen to help develop technical skills in game design, programming, and user experience.",
@@ -39,7 +39,7 @@ let projects = [
   },
   {
     href: "https://clockittimetracker.netlify.app/",
-    src: "assets/projects/clockit.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971559/ub7sh03ensv9hgqwyd9w.png",
     sub: "React.JS",
     main: "ClockIt: Time Tracking & Project Management",
     desc: "Built with the MERN stack, ClockIt is a comprehensive productivity and project management app designed to streamline your workflow. While the backend features are fully implemented, this showcase version uses local storage for demonstration purposes. Track time, manage projects, and boost productivity—all with a sleek and intuitive interface.",
@@ -47,12 +47,12 @@ let projects = [
   },
   {
     href: "https://adminpanaldemo.netlify.app/",
-    src: "assets/projects/elearnadmin.png",
+    src: "https://res.cloudinary.com/dsfdxsogy/image/upload/v1725971560/rpulynfwmxihyahhlxgi.png",
     sub: "React.JS",
     main: "E-Learn Admin Panel: Manage Your E-Learning Platform",
     desc: "The E-Learn Admin Panel is a powerful tool built with React.js for comprehensive management of courses, mentors, reviews, and more. Featuring intuitive dashboards with charts and analytics, this panel provides an easy way to oversee and optimize your e-learning platform’s operations.",
     view: "View Project",
-  }
+  },
 ];
 projects.reverse();
 
