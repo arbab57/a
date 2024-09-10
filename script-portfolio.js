@@ -18,7 +18,14 @@ let projects = [
     desc: "This TodoList App is a sleek and efficient task management tool built with React.js, designed to help users stay organized and productive. This project showcases the powerful capabilities of React in building dynamic and responsive user interfaces.",
     view: "view Project",
   },
-
+  {
+    href: "https://elearnfronentdemo.netlify.app/",
+    src: "assets/projects/elearnfrontend.png",
+    sub: "React.JS",
+    main: "E-Learn: Frontend for E-Learning Platform",
+    desc: "The E-Learn frontend is a visually engaging and interactive user interface built with React.js. This static version of the e-learning platform showcases key features such as course browsing, user profiles, and interactive elements, using static data to demonstrate the app's functionality and design.",
+    view: "View Project",
+  },
   {
     href: "https://arbab57.github.io/calculator/",
     src: "assets/projects/calculator.png",
