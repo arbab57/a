@@ -130,6 +130,14 @@ let projects = [
     view: "View Project",
   },
   {
+    href: "https://github.com/arbab57/E-Learn-Backend",
+    src: "assets/projects/elearnbackend.png",
+    sub: "Node.js",
+    main: "E-Learn: E-Learning Platform Backend",
+    desc: "Built with the MERN stack, the E-Learn backend powers a comprehensive e-learning platform, managing everything from user authentication to course management. This backend supports user registrations, purchases, course enrollment, and reviews, with secure JWT authentication and efficient database handling using MongoDB. Designed to interact smoothly with the frontend, the backend ensures a seamless experience for both students and mentors. The system is fully functional, providing a robust API for the platform's learning management features.",
+    view: "View Project",
+  },  
+  {
     href: "https://github.com/arbab57/timetrackerbackend",
     src: "assets/projects/timetrackerbackend.png",
     sub: "Node.js",
